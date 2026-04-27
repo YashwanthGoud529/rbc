@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Contact = () => {
-  // Contact images data
   const contactImages = [
     {
       id: 1,
@@ -101,7 +100,7 @@ const Contact = () => {
         <main data-taxi="" className="main-wrapper">
           <div data-taxi-view="" className="page_view">
             <section className="section contact">
-             
+
               <div className="container contact">
                 <div className="contact_w">
                   <div className="card_contact_w_absolute">
@@ -192,6 +191,8 @@ const Contact = () => {
                                 <input className="field-form w-input" maxLength="256" name="email" placeholder="Your email" type="email" required="" />
                                 <div className="fake-submit_w">
                                   <input type="submit" className="submit-btn w-button" value="" />
+                                </div><div className="fake-submit_w">
+                                  <input type="submit" className="submit-btn w-button" value="" />
                                 </div>
                               </form>
                             </div>
@@ -213,6 +214,7 @@ const Contact = () => {
                       <a href="mailto:hello@mersi-architecture.com" className="text-block-4-copy">hello@mersi-architecture.com</a>
                       <a href="tel:+33609872775" className="text-block-4-copy off">+33 6 09 87 27 75</a>
                       <a href="tel:+33609872775" className="text-block-4-copy off">+33 1 72 68 22 28 </a>
+                      <div style={{ marginTop: '20px', opacity: 0.7 }}>Quiet luxury interiors</div>
                     </div>
                   </div>
 

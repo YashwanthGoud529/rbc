@@ -162,6 +162,7 @@ const ProjectDetail = () => {
                         <div className="info-desc-project">
                           <div line="" className="courte-desc">Reception apartment with details inspired by the view of the UNESCO sky</div>
                         </div>
+                        
                       </div>
                       <h1 reveal-letter="" className="h1-project">Segur</h1>
                     </div>
