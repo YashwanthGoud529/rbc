@@ -1,0 +1,83 @@
+export const projects = [
+    {
+        id: 1,
+        name: "Naya",
+        slug: "naya",
+        location: "Levallois",
+        category: "Residential",
+        year: "2025",
+        backgroundColor: "hsla(30, 40%, 25%, 1)",
+        description: "Unique interior with warm tones for a cozy and timeless atmosphere",
+        surface: "110",
+        leftImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858ffb31f5a2c4b0240d9_MERSI%20x%20LEVALLOIS-9.webp",
+        leftImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858ffb31f5a2c4b0240d9_MERSI%20x%20LEVALLOIS-9-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858ffb31f5a2c4b0240d9_MERSI%20x%20LEVALLOIS-9-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858ffb31f5a2c4b0240d9_MERSI%20x%20LEVALLOIS-9-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858ffb31f5a2c4b0240d9_MERSI%20x%20LEVALLOIS-9.webp 1333w",
+        rightImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1).webp",
+        rightImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1)-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1).webp 1333w",
+        gallery: [
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73a3fc82023abcb0978_MERSI%20x%20LEVALLOIS-2%203.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73a8d7b10d84ddcd5e9_MERSI%20x%20LEVALLOIS-8%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73ade92a98d912e4996_MERSI%20x%20LEVALLOIS-4%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73ad941c9eae3d095bf_MERSI%20x%20LEVALLOIS-7%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73a5ee593f1cceb0981_MERSI%20x%20LEVALLOIS-6%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73ac97b92624efd9dc2_MERSI%20x%20LEVALLOIS-3%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73af2b27d3f29faa152_MERSI%20x%20LEVALLOIS-11-V2%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73a82d6e0b1081eefd4_MERSI%20x%20LEVALLOIS-5%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73af8db708b6c1f85af_MERSI%20x%20LEVALLOIS-13%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73abf0574da845293d3_MERSI%20x%20LEVALLOIS-17%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73ad1c7daa615fb598f_MERSI%20x%20LEVALLOIS-18%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73ac60e4debbb52a730_MERSI%20x%20LEVALLOIS-19%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73ad30f76c1b5d8ec3a_MERSI%20x%20LEVALLOIS-20%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73a7f4a23a526c0b5ab_MERSI%20x%20LEVALLOIS-15%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73a5be34b2cb97216a4_MERSI%20x%20LEVALLOIS-16%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73a62628a3430332713_MERSI%20x%20LEVALLOIS-14%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73acebbddd37eadaf3a_MERSI%20x%20LEVALLOIS-12%201.webp",
+            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73abd072882e1d6e526_MERSI%20x%20LEVALLOIS-21%201.webp"
+        ],
+        services: [
+            "Interior Architecture",
+            "Architectural Design",
+            "Construction Management",
+            "Custom Millwork",
+            "Furniture & Decoration"
+        ]
+    },
+    {
+        id: 2,
+        name: "Maurice Cafe St-Honore",
+        slug: "maurice-cafe-st-honore",
+        location: "Paris 1st",
+        category: "Hospitality",
+        year: "2025",
+        backgroundColor: "hsla(160, 20%, 30%, 1)",
+        leftImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c495cbbf3419dbc4ab9_MERSI%20x%20MAURICE_-10.webp",
+        leftImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c495cbbf3419dbc4ab9_MERSI%20x%20MAURICE_-10-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c495cbbf3419dbc4ab9_MERSI%20x%20MAURICE_-10-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c495cbbf3419dbc4ab9_MERSI%20x%20MAURICE_-10.webp 1080w",
+        rightImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c648569d5ab75b8d1a3_MERSI%20x%20MAURICE_-6.webp",
+        rightImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c648569d5ab75b8d1a3_MERSI%20x%20MAURICE_-6-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c648569d5ab75b8d1a3_MERSI%20x%20MAURICE_-6-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c648569d5ab75b8d1a3_MERSI%20x%20MAURICE_-6.webp 1080w"
+    },
+    {
+        id: 3,
+        name: "Berri",
+        slug: "berri",
+        location: "Paris 7th",
+        category: "Residential",
+        year: "2024",
+        backgroundColor: "hsla(50, 15%, 50%, 1)",
+        leftImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c187ea27e1d8b193ede_CC_MERSIxBERRI-16%20(1).webp",
+        leftImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c187ea27e1d8b193ede_CC_MERSIxBERRI-16%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c187ea27e1d8b193ede_CC_MERSIxBERRI-16%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c187ea27e1d8b193ede_CC_MERSIxBERRI-16%20(1).webp 1080w",
+        rightImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1).webp",
+        rightImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1)-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1).webp 1333w"
+    },
+    {
+        id: 4,
+        name: "Cook",
+        slug: "cook",
+        location: "Paris 17th",
+        category: "Hospitality",
+        year: "2023",
+        backgroundColor: "hsla(15, 60%, 40%, 1)",
+        leftImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dcdc46ceb478ef3012143_Cover%20L.webp",
+        leftImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dcdc46ceb478ef3012143_Cover%20L-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dcdc46ceb478ef3012143_Cover%20L-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dcdc46ceb478ef3012143_Cover%20L-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dcdc46ceb478ef3012143_Cover%20L.webp 1440w",
+        rightImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85beae7ee6ecaf8863ba3_CC_Mersi%20x%20Restaurant%20COOK-2.webp",
+        rightImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85beae7ee6ecaf8863ba3_CC_Mersi%20x%20Restaurant%20COOK-2-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85beae7ee6ecaf8863ba3_CC_Mersi%20x%20Restaurant%20COOK-2-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85beae7ee6ecaf8863ba3_CC_Mersi%20x%20Restaurant%20COOK-2.webp 1080w"
+    }
+];
