@@ -8,7 +8,6 @@ const Projects = () => {
         { name: "Hospitality" }
     ];
 
-    // Projects data for the first grid (images only)
     const projectImages = [
         {
             id: 1,
@@ -39,9 +38,30 @@ const Projects = () => {
             id: 6,
             src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R.webp",
             srcSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R.webp 1440w"
+        },
+
+        // New Images
+        {
+            id: 7,
+            src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dcffd7c4bc95194bed857_Cover%20R.webp",
+            srcSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dcffd7c4bc95194bed857_Cover%20R.webp 1440w"
+        },
+        {
+            id: 8,
+            src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858a21313048249c36dc2_MERSI%20x%20AURE%CC%81LIEN%20COHEN-4%20(1).webp",
+            srcSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858a21313048249c36dc2_MERSI%20x%20AURE%CC%81LIEN%20COHEN-4%20(1).webp 1440w"
+        },
+        {
+            id: 9,
+            src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd9281a44841220d126ec_Cover%20R.webp",
+            srcSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd9281a44841220d126ec_Cover%20R.webp 1440w"
+        },
+        {
+            id: 10,
+            src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd34dddd61db985f47bed_Cover%20R.webp",
+            srcSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd34dddd61db985f47bed_Cover%20R.webp 1440w"
         }
     ];
-
     // Full projects data for the second grid
     const projects = [
         {
@@ -50,8 +70,7 @@ const Projects = () => {
             category: "Residential",
             bgColor: "hsla(16, 58.87%, 42.88%, 1.00)",
             href: "/projets/naya",
-            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1).webp",
-            imageSrcSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1)-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1).webp 1333w"
+            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1).webp"
         },
         {
             id: 2,
@@ -59,8 +78,7 @@ const Projects = () => {
             category: "Hospitality",
             bgColor: "#657b69",
             href: "/projets/cafe-maurice-saint-honore",
-            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c648569d5ab75b8d1a3_MERSI%20x%20MAURICE_-6.webp",
-            imageSrcSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c648569d5ab75b8d1a3_MERSI%20x%20MAURICE_-6-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c648569d5ab75b8d1a3_MERSI%20x%20MAURICE_-6-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c648569d5ab75b8d1a3_MERSI%20x%20MAURICE_-6.webp 1080w"
+            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c648569d5ab75b8d1a3_MERSI%20x%20MAURICE_-6.webp"
         },
         {
             id: 3,
@@ -68,8 +86,7 @@ const Projects = () => {
             category: "Residential",
             bgColor: "#aaa798",
             href: "/projets/berri",
-            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1).webp",
-            imageSrcSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1)-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1).webp 1333w"
+            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1).webp"
         },
         {
             id: 4,
@@ -77,8 +94,7 @@ const Projects = () => {
             category: "Hospitality",
             bgColor: "#657b69",
             href: "/projets/cafe-maurice-victor-hugo",
-            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85dced45ab84536e7cd04_MERSI%20x%20MAURICE_-16.webp",
-            imageSrcSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85dced45ab84536e7cd04_MERSI%20x%20MAURICE_-16-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85dced45ab84536e7cd04_MERSI%20x%20MAURICE_-16-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85dced45ab84536e7cd04_MERSI%20x%20MAURICE_-16-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85dced45ab84536e7cd04_MERSI%20x%20MAURICE_-16-p-1600.webp 1600w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85dced45ab84536e7cd04_MERSI%20x%20MAURICE_-16-p-2000.webp 2000w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85dced45ab84536e7cd04_MERSI%20x%20MAURICE_-16.webp 2430w"
+            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85dced45ab84536e7cd04_MERSI%20x%20MAURICE_-16.webp"
         },
         {
             id: 5,
@@ -86,8 +102,7 @@ const Projects = () => {
             category: "Hospitality",
             bgColor: "#dc633f",
             href: "/projets/cook",
-            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85beae7ee6ecaf8863ba3_CC_Mersi%20x%20Restaurant%20COOK-2.webp",
-            imageSrcSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85beae7ee6ecaf8863ba3_CC_Mersi%20x%20Restaurant%20COOK-2-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85beae7ee6ecaf8863ba3_CC_Mersi%20x%20Restaurant%20COOK-2-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85beae7ee6ecaf8863ba3_CC_Mersi%20x%20Restaurant%20COOK-2.webp 1080w"
+            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85beae7ee6ecaf8863ba3_CC_Mersi%20x%20Restaurant%20COOK-2.webp"
         },
         {
             id: 6,
@@ -95,8 +110,41 @@ const Projects = () => {
             category: "Residential",
             bgColor: "#918f7a",
             href: "/projets/segur",
-            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R.webp",
-            imageSrcSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R.webp 1440w"
+            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R.webp"
+        },
+
+        // NEW ITEMS
+        {
+            id: 7,
+            name: "Project Seven",
+            category: "Residential",
+            bgColor: "#999",
+            href: "/projets/project-seven",
+            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dcffd7c4bc95194bed857_Cover%20R.webp"
+        },
+        {
+            id: 8,
+            name: "Aurelien Cohen",
+            category: "Residential",
+            bgColor: "#888",
+            href: "/projets/aurelien-cohen",
+            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858a21313048249c36dc2_MERSI%20x%20AURE%CC%81LIEN%20COHEN-4%20(1).webp"
+        },
+        {
+            id: 9,
+            name: "Project Nine",
+            category: "Residential",
+            bgColor: "#777",
+            href: "/projets/project-nine",
+            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd9281a44841220d126ec_Cover%20R.webp"
+        },
+        {
+            id: 10,
+            name: "Project Ten",
+            category: "Residential",
+            bgColor: "#666",
+            href: "/projets/project-ten",
+            image: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd34dddd61db985f47bed_Cover%20R.webp"
         }
     ];
 

@@ -1,0 +1,48 @@
+.grid-info-text {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* exactly 2 frames: image column + text column */
+    align-items: stretch;
+    gap: 5rem;
+    /* grid-column-gap and row-gap both 5rem */
+    margin-top: 5rem;
+    grid-auto-columns: 1fr;
+    place-items: start stretch;
+}
+
+.info-simon {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: start;
+    max-width: 53.8125rem;
+    display: flex;
+    overflow: hidden;
+    text-align: start;
+}
+
+.info-mersi-name {
+    text-align: left;
+    margin-bottom: 0.875rem;
+    font-family: Doner, Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.info-simon h3 {
+    padding: 20px 0px;
+}
+
+.info-footer {
+    padding-bottom: 20px;
+}
+
+.info-footer span {
+    font-size: 0.7rem;
+    color: #808080f0;
+    font-weight: 500;
+}
+
+.second-item {
+    padding-top: 100px;
+}

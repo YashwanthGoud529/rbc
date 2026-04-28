@@ -1,16 +1,24 @@
-import React, { useEffect, useRef, useState } from 'react'; // Added useState
+import React, { useEffect, useRef, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './components/home/Home';
 import './index.css';
 import Curtains from './components/Curtains';
-import Loader from './components/Loader'; // Make sure this component accepts an 'isLoading' prop
+import Loader from './components/Loader'; 
 import Navbar from './components/common/Navbar'
-import Process from './components/process/Process';
 import Shop from './components/shop/Shop';
-import AgenceFixed from './components/agence/AgenceFixed';
 import Contact from './components/contact/Contact';
 import Projects from './components/projects/Projects';
 import ProjectDetail from './components/HomeAbout/ProjectDetail';
+import Company from './components/company/Company';
+import Divisions from './components/divisions/Divisions';
+import Mines from './components/mines/Mines';
+import Blogs from './components/blog/Blogs';
+import Shariah from './components/Shariah/Shariah';
+import MinePage from './components/pages/Mine';
+import RefinePage from './components/pages/Refine';
+import TradingPage from './components/pages/Trading';
+import OneMGPage from './components/pages/OneMG';
+import MGCconference from './components/mgc/MGCconference';
 
 function AppContent() {
   const location = useLocation();
@@ -215,18 +223,14 @@ function AppContent() {
     // 1. Start Loader immediately on route change
     setIsLoading(true);
 
-    // Global reload logic for all inner pages (navbar links)
+    // Global reload logic for all pages (including home)
     const currentPath = location.pathname;
-    if (currentPath !== '/') {
-      const lastReloaded = sessionStorage.getItem('last_reloaded_path');
-      if (lastReloaded !== currentPath) {
-        sessionStorage.setItem('last_reloaded_path', currentPath);
-        window.location.reload();
-        return;
-      }
-    } else {
-      // Reset flag when back on home so inner pages reload again on next visit
-      sessionStorage.removeItem('last_reloaded_path');
+    const lastReloaded = sessionStorage.getItem('last_reloaded_path');
+
+    if (lastReloaded !== currentPath) {
+      sessionStorage.setItem('last_reloaded_path', currentPath);
+      window.location.reload();
+      return;
     }
 
     // Scroll to top
@@ -275,10 +279,17 @@ function AppContent() {
             <div className="voile"></div>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/company" element={<Company />} />
               <Route path="/projets" element={<Projects />} />
-              <Route path="/agence" element={<AgenceFixed />} />
-              <Route path="/process" element={<Process />} />
+              <Route path="/divisions" element={<Divisions />} />
+              <Route path="/mgc-conference-2026" element={<MGCconference />} />
+              <Route path="/blog" element={<Blogs />} />
+              <Route path="/shariah" element={<Shariah />} />
               <Route path="/shop" element={<Shop />} />
+              <Route path="/mine" element={<MinePage />} />
+              <Route path="/refine" element={<RefinePage />} />
+              <Route path="/trading" element={<TradingPage />} />
+              <Route path="/1-mg" element={<OneMGPage />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/projets/:slug" element={<ProjectDetail />} />
               <Route path="*" element={<Home />} />

@@ -1,83 +1,125 @@
 export const projects = [
-    {
-        id: 1,
-        name: "Naya",
-        slug: "naya",
-        location: "Levallois",
-        category: "Residential",
-        year: "2025",
-        backgroundColor: "hsla(30, 40%, 25%, 1)",
-        description: "Unique interior with warm tones for a cozy and timeless atmosphere",
-        surface: "110",
-        leftImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858ffb31f5a2c4b0240d9_MERSI%20x%20LEVALLOIS-9.webp",
-        leftImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858ffb31f5a2c4b0240d9_MERSI%20x%20LEVALLOIS-9-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858ffb31f5a2c4b0240d9_MERSI%20x%20LEVALLOIS-9-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858ffb31f5a2c4b0240d9_MERSI%20x%20LEVALLOIS-9-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858ffb31f5a2c4b0240d9_MERSI%20x%20LEVALLOIS-9.webp 1333w",
-        rightImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1).webp",
-        rightImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1)-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1).webp 1333w",
-        gallery: [
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73a3fc82023abcb0978_MERSI%20x%20LEVALLOIS-2%203.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73a8d7b10d84ddcd5e9_MERSI%20x%20LEVALLOIS-8%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73ade92a98d912e4996_MERSI%20x%20LEVALLOIS-4%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73ad941c9eae3d095bf_MERSI%20x%20LEVALLOIS-7%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73a5ee593f1cceb0981_MERSI%20x%20LEVALLOIS-6%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73ac97b92624efd9dc2_MERSI%20x%20LEVALLOIS-3%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73af2b27d3f29faa152_MERSI%20x%20LEVALLOIS-11-V2%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73a82d6e0b1081eefd4_MERSI%20x%20LEVALLOIS-5%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73af8db708b6c1f85af_MERSI%20x%20LEVALLOIS-13%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73abf0574da845293d3_MERSI%20x%20LEVALLOIS-17%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73ad1c7daa615fb598f_MERSI%20x%20LEVALLOIS-18%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73ac60e4debbb52a730_MERSI%20x%20LEVALLOIS-19%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73ad30f76c1b5d8ec3a_MERSI%20x%20LEVALLOIS-20%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73a7f4a23a526c0b5ab_MERSI%20x%20LEVALLOIS-15%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73a5be34b2cb97216a4_MERSI%20x%20LEVALLOIS-16%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73a62628a3430332713_MERSI%20x%20LEVALLOIS-14%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73acebbddd37eadaf3a_MERSI%20x%20LEVALLOIS-12%201.webp",
-            "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd73abd072882e1d6e526_MERSI%20x%20LEVALLOIS-21%201.webp"
-        ],
-        services: [
-            "Interior Architecture",
-            "Architectural Design",
-            "Construction Management",
-            "Custom Millwork",
-            "Furniture & Decoration"
-        ]
-    },
-    {
-        id: 2,
-        name: "Maurice Cafe St-Honore",
-        slug: "maurice-cafe-st-honore",
-        location: "Paris 1st",
-        category: "Hospitality",
-        year: "2025",
-        backgroundColor: "hsla(160, 20%, 30%, 1)",
-        leftImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c495cbbf3419dbc4ab9_MERSI%20x%20MAURICE_-10.webp",
-        leftImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c495cbbf3419dbc4ab9_MERSI%20x%20MAURICE_-10-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c495cbbf3419dbc4ab9_MERSI%20x%20MAURICE_-10-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c495cbbf3419dbc4ab9_MERSI%20x%20MAURICE_-10.webp 1080w",
-        rightImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c648569d5ab75b8d1a3_MERSI%20x%20MAURICE_-6.webp",
-        rightImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c648569d5ab75b8d1a3_MERSI%20x%20MAURICE_-6-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c648569d5ab75b8d1a3_MERSI%20x%20MAURICE_-6-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c648569d5ab75b8d1a3_MERSI%20x%20MAURICE_-6.webp 1080w"
-    },
-    {
-        id: 3,
-        name: "Berri",
-        slug: "berri",
-        location: "Paris 7th",
-        category: "Residential",
-        year: "2024",
-        backgroundColor: "hsla(50, 15%, 50%, 1)",
-        leftImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c187ea27e1d8b193ede_CC_MERSIxBERRI-16%20(1).webp",
-        leftImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c187ea27e1d8b193ede_CC_MERSIxBERRI-16%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c187ea27e1d8b193ede_CC_MERSIxBERRI-16%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c187ea27e1d8b193ede_CC_MERSIxBERRI-16%20(1).webp 1080w",
-        rightImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1).webp",
-        rightImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1)-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1).webp 1333w"
-    },
-    {
-        id: 4,
-        name: "Cook",
-        slug: "cook",
-        location: "Paris 17th",
-        category: "Hospitality",
-        year: "2023",
-        backgroundColor: "hsla(15, 60%, 40%, 1)",
-        leftImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dcdc46ceb478ef3012143_Cover%20L.webp",
-        leftImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dcdc46ceb478ef3012143_Cover%20L-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dcdc46ceb478ef3012143_Cover%20L-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dcdc46ceb478ef3012143_Cover%20L-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dcdc46ceb478ef3012143_Cover%20L.webp 1440w",
-        rightImage: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85beae7ee6ecaf8863ba3_CC_Mersi%20x%20Restaurant%20COOK-2.webp",
-        rightImageSet: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85beae7ee6ecaf8863ba3_CC_Mersi%20x%20Restaurant%20COOK-2-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85beae7ee6ecaf8863ba3_CC_Mersi%20x%20Restaurant%20COOK-2-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85beae7ee6ecaf8863ba3_CC_Mersi%20x%20Restaurant%20COOK-2.webp 1080w"
-    }
+  {
+    name: "Mine",
+    slug: "mine",
+    location: "Mine",
+    locationDesk: "Mine",
+    type: "Residential",
+    year: "2025",
+    leftImage: "/images/home-slider/Mine1.jpg",
+    rightImage: "/images/home-slider/Mine2.jpg",
+    leftImageSet: "/images/home-slider/Mine1.jpg",
+    rightImageSet: "/images/home-slider/Mine2.jpg",
+    bgColor: "#62a86fff",
+    description: "Royal Bullion Capital is proud to announce a partnership with Crescent Metals & Minerals, a leading player in the African market, in Ghana. This collaboration is valid till 2050 and enables us to expand our bullion market offerings and provide our investors with access to a wider range of investment opportunities in the industry.",
+    surface: "120",
+    address: "Place des Vosges, Paris 4",
+    services: [
+      { id: 1, name: 'Interior Architecture' },
+      { id: 2, name: 'Custom Millwork' },
+      { id: 3, name: 'Furniture Selection' }
+    ],
+    galleryImages: [
+      { src: "/images/home-slider/Mine1.jpg", alt: "M" },
+      { src: "/images/home-slider/Mine2.jpg", alt: "L" },
+      { src: "/images/home-slider/Mine1.jpg", alt: "S" },
+      { src: "/images/home-slider/Mine2.jpg", alt: "M" }
+    ]
+  },
+  {
+    name: "Refine",
+    slug: "refine",
+    location: "Refine",
+    locationDesk: "Refine",
+    type: "Residential",
+    year: "2025",
+    leftImage: "/images/home-slider/refine1.jpg",
+    rightImage: "/images/home-slider/refine2.jpg",
+    leftImageSet: "/images/home-slider/refine1.jpg",
+    rightImageSet: "/images/home-slider/refine2.jpg",
+    bgColor: "#4e4846ff",
+    description: "",
+    surface: "85",
+    address: "Rue du Bac, Paris 7",
+    services: [
+      { id: 1, name: 'Architectural Design' },
+      { id: 2, name: 'Construction Management' },
+      { id: 3, name: 'Styling' }
+    ],
+    galleryImages: [
+      { src: "/images/home-slider/refine1.jpg", alt: "M" },
+      { src: "/images/home-slider/refine2.jpg", alt: "L" },
+      { src: "/images/home-slider/refine1.jpg", alt: "S" },
+      { src: "/images/home-slider/refine2.jpg", alt: "M" }
+    ]
+  },
+  {
+    name: "Trading",
+    slug: "trading",
+    location: "Trading",
+    locationDesk: "Trading",
+    type: "Residential",
+    year: "2025",
+    leftImage: "/images/home-slider/Trading1.jpg",
+    rightImage: "/images/home-slider/Trading2.jpg",
+    leftImageSet: "/images/home-slider/Trading1.jpg",
+    rightImageSet: "/images/home-slider/Trading2.jpg",
+    bgColor: "#f85656ff",
+    description: "",
+    surface: "150",
+    address: "Avenue Montaigne, Paris 8",
+    services: [
+      { id: 1, name: 'Interior Decoration' },
+      { id: 2, name: 'Furniture Selection' },
+      { id: 3, name: 'Custom Millwork' }
+    ],
+    galleryImages: [
+      { src: "/images/home-slider/Trading1.jpg", alt: "M" },
+      { src: "/images/home-slider/Trading2.jpg", alt: "L" },
+      { src: "/images/home-slider/Trading1.jpg", alt: "S" },
+      { src: "/images/home-slider/Trading2.jpg", alt: "M" }
+    ]
+  },
+  {
+    name: "1 MG",
+    slug: "1-mg",
+    location: "1 MG",
+    locationDesk: "1 MG",
+    type: "Residential",
+    year: "2025",
+    leftImage: "/images/home-slider/1mg1.jpg",
+    rightImage: "/images/home-slider/1mg2.jpg",
+    leftImageSet: "/images/home-slider/1mg1.jpg",
+    rightImageSet: "/images/home-slider/1mg2.jpg",
+    bgColor: "hsla(69, 100%, 64%, 1.00)",
+    description: "", surface: "100%",
+    address: "Canal Saint-Martin, Paris 10",
+    services: [
+      { id: 1, name: 'Innovative Platform' },
+      { id: 2, name: 'Trained Professionals' },
+      { id: 3, name: 'Lifestyle Perks' }
+    ],
+    galleryImages: [
+      { src: "https://royalbullioncapital.com/wp-content/uploads/2026/02/RBC-Mockup-1.png", alt: "S" },
+      { src: "https://1mg.gold/wp-content/uploads/2024/08/1-1.png", alt: "M" },
+      { src: "https://1mg.gold/wp-content/uploads/2024/08/2-1.png", alt: "L" },
+      { src: "https://1mg.gold/wp-content/uploads/2024/08/vault.png", alt: "S" },
+      { src: "https://1mg.gold/wp-content/uploads/2024/08/4-1.png", alt: "M" },
+      { src: "https://1mg.gold/wp-content/uploads/2024/08/5-1.png", alt: "M" }
+
+    ]
+  }
 ];
+
+export const contactImages = projects.flatMap((p, pIndex) => [
+  {
+    id: pIndex * 2 + 1,
+    src: p.leftImage,
+    srcSet: p.leftImageSet
+  },
+  {
+    id: pIndex * 2 + 2,
+    src: p.rightImage,
+    srcSet: p.rightImageSet
+  }
+]);

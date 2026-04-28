@@ -1,66 +1,17 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { projects } from '../data/projects';
 
 const HomeSlider = () => {
   const navigate = useNavigate();
   
-  const projects = [
-    {
-      name: "Mine",
-      slug: "mine",
-      location: "Paris",
-      locationDesk: "Paris",
-      type: "Residential",
-      year: "2025",
-      leftImage: "/images/home-slider/Mine1.jpg",
-      rightImage: "/images/home-slider/Mine2.jpg",
-      leftImageSet: "/images/home-slider/Mine1.jpg",
-      rightImageSet: "/images/home-slider/Mine2.jpg",
-      bgColor: "#657b69"
-    },
-    {
-      name: "Refine",
-      slug: "refine",
-      location: "Paris",
-      locationDesk: "Paris",
-      type: "Residential",
-      year: "2025",
-      leftImage: "/images/home-slider/refine1.jpg",
-      rightImage: "/images/home-slider/refine2.jpg",
-      leftImageSet: "/images/home-slider/refine1.jpg",
-      rightImageSet: "/images/home-slider/refine2.jpg",
-      bgColor: "#dc633f"
-    },
-    {
-      name: "Trading",
-      slug: "trading",
-      location: "Paris",
-      locationDesk: "Paris",
-      type: "Residential",
-      year: "2025",
-      leftImage: "/images/home-slider/Trading1.jpg",
-      rightImage: "/images/home-slider/Trading2.jpg",
-      leftImageSet: "/images/home-slider/Trading1.jpg",
-      rightImageSet: "/images/home-slider/Trading2.jpg",
-      bgColor: "#aaa798"
-    },
-    {
-      name: "1 MG",
-      slug: "1-mg",
-      location: "Paris",
-      locationDesk: "Paris",
-      type: "Residential",
-      year: "2025",
-      leftImage: "/images/home-slider/1mg1.jpg",
-      rightImage: "/images/home-slider/1mg2.jpg",
-      leftImageSet: "/images/home-slider/1mg1.jpg",
-      rightImageSet: "/images/home-slider/1mg2.jpg",
-      bgColor: "hsla(16, 58.87%, 42.88%, 1.00)"
-    }
-  ];
 
   const handleProjectClick = (slug) => {
-    navigate(`/projets/${slug}`);
+    if (slug === '1-mg') {
+      navigate('/1-mg');
+    } else {
+      navigate(`/${slug}`);
+    }
   };
 
   return (

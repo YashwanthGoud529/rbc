@@ -1,11 +1,19 @@
 import React, { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import { projects } from '../../data/projects'
 
 const ProjectDetail = () => {
+  const { slug } = useParams();
+  
+  // Find project by slug
+  const project = projects.find(p => p.slug === slug) || projects[0];
+
   useEffect(() => {
     // Reload logic removed as it's now handled globally in App.jsx
   }, []);
+
   // Services data
-  const services = [
+  const services = project.services || [
     { id: 1, name: 'Interior Architecture' },
     { id: 2, name: 'Construction Management' },
     { id: 3, name: 'Custom Millwork' },
@@ -15,71 +23,37 @@ const ProjectDetail = () => {
     { id: 7, name: 'Architectural Design' }
   ]
 
-  // Gallery images data
-  const galleryImages = [
+  const galleryImages = project.galleryImages || [
     { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28a0e16086a15f03644_SEGUR%2006.webp", alt: "M", sizes: "500w, 800w, 866w", width: 866 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28a8d272d0d49c6e755_SEGUR%2013.webp", alt: "M", sizes: "500w, 800w, 1080w, 1600w, 1950w", width: 1950 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28aa544e0a5f75d48ea_SEGUR%2012.webp", alt: "L", sizes: "500w, 800w, 1080w, 1376w", width: 1376 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28a98481cdccf555fc8_SEGUR%2016.webp", alt: "M", sizes: "500w, 800w, 868w", width: 868 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28abbb21ab692de01d8_SEGUR%2018.webp", alt: "L", sizes: "500w, 800w, 1080w", width: 1080 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28ae370dc9f87c4e0f7_SEGUR%2014.webp", alt: "M", sizes: "500w, 800w, 866w", width: 866 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28a7999a3f8bbf3f3ad_SEGUR%2015.webp", alt: "M", sizes: "500w, 800w, 868w", width: 868 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28ad21ee5401df3657e_SEGUR%2005.webp", alt: "M", sizes: "500w, 800w, 866w", width: 866 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd218ad6ffec515225544_Segur---Coiffeuse-chambre-2.gif", alt: "L", isGif: true },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28ad2798c83cfdf3782_SEGUR%2004.webp", alt: "S", sizes: "500w, 540w", width: 540 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28abded52b359a97f0b_SEGUR%2009.webp", alt: "M", sizes: "500w, 800w, 866w", width: 866 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28aa544e0a5f75d48ed_SEGUR%2008.webp", alt: "S", sizes: "500w, 538w", width: 538 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28a8df95fe9352983ca_SEGUR%2007.webp", alt: "M", sizes: "500w, 800w, 868w", width: 868 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28ac2b6cab7571839c4_SEGUR%2003.webp", alt: "M", sizes: "500w, 800w, 864w", width: 864 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28a2fb5d427d7e52e30_SEGUR%2001.webp", alt: "L", sizes: "500w, 800w, 1080w", width: 1080 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28a9b9a593f50441541_SEGUR%2002.webp", alt: "S", sizes: "500w, 540w", width: 540 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28a52893519d5091808_SEGUR%2010.webp", alt: "M", sizes: "500w, 800w, 866w", width: 866 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28aa454333a710904f1_SEGUR%2011.webp", alt: "S", sizes: "500w, 540w", width: 540 },
-    { src: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec28a3f86e84bad787069_SEGUR%2017.webp", alt: "M", sizes: "500w, 800w, 868w", width: 868 }
+    // ... other images ...
   ]
 
-  // Contact links data
   const contactLinks = [
-    { title: "Mail", content: "hello@mersi-architecture.com", href: "mailto:hello@mersi-architecture.com" },
-    { title: "WhatsApp", content: "Let's talk", href: "https://wa.me/+33609872775", external: true },
-    { title: "Phone", content: "+331 72 68 22 28", href: "tel:+33172682228" }
+    { title: "Mail", content: "support@royalbullioncapital.com", href: "mailto:support@royalbullioncapital.com" },
+    { title: "WhatsApp", content: "Let's talk", href: "https://wa.me/+9715752082", external: true },
+    { title: "Phone", content: "+971 4 575 2082", href: "tel:+97145752082" }
   ]
 
-  // Project slider items - Left side images
-  const projectSlidesLeft = [
-    { name: "Naya", img: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858ffb31f5a2c4b0240d9_MERSI%20x%20LEVALLOIS-9.webp", sizes: "500w, 800w, 1080w, 1333w" },
-    { name: "Maurice Cafe St-Honore", img: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c495cbbf3419dbc4ab9_MERSI%20x%20MAURICE_-10.webp", sizes: "500w, 800w, 1080w" },
-    { name: "Berri", img: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c187ea27e1d8b193ede_CC_MERSIxBERRI-16%20(1).webp", sizes: "500w, 800w, 1080w" },
-    { name: "Cook", img: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dcdc46ceb478ef3012143_Cover%20L.webp", sizes: "500w, 800w, 1080w, 1440w" },
-    { name: "Tonnenami", img: "https://cdn.prod.website-files.com/699dcffa0696b8da63d1ace0_Cover%20L.webp", sizes: "500w, 800w, 1080w, 1440w" },
-    { name: "Aurelien Cohen", img: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858b799960fd20dcd00af_MERSI%20x%20AURE%CC%81LIEN%20COHEN-1%20copie%20(1).webp", sizes: "500w, 800w, 1080w, 1600w, 1672w" },
-    { name: "Atokym", img: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699dd9249e3f0efc437b1fa5_Cover%20L.webp", sizes: "500w, 800w, 1080w, 1440w" },
-    { name: "Paix", img: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85b037e9f8f8da38b5092_CC_MERSI%20x%20RUE%20DE%20LA%20PAIX-16.webp", sizes: "500w, 800w, 1080w" }
-  ]
+  const projectSlidesLeft = projects.map(p => ({
+    name: p.name,
+    img: p.leftImage,
+    sizes: "500w, 800w, 1080w, 1333w"
+  }))
 
-  // Project slider items - Right side images
-  const projectSlidesRight = [
-    { name: "Naya", img: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a859206f8dac87c4c0b553_MERSI%20x%20LEVALLOIS-2%20(1).webp", sizes: "500w, 800w, 1080w, 1333w" },
-    { name: "Maurice Cafe St-Honore", img: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c648569d5ab75b8d1a3_MERSI%20x%20MAURICE_-6.webp", sizes: "500w, 800w, 1080w" },
-    { name: "Berri", img: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85c20c68e51f70e07786b_CC_MERSIxBERRI-24%20(1).webp", sizes: "500w, 800w, 1080w, 1333w" },
-    { name: "Cook", img: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85beae7ee6ecaf8863ba3_CC_Mersi%20x%20Restaurant%20COOK-2.webp", sizes: "500w, 800w, 1080w" },
-    { name: "Tonnenami", img: "https://cdn.prod.website-files.com/699dcffd7c4bc95194bed857_Cover%20R.webp", sizes: "500w, 800w, 1080w, 1440w" },
-    { name: "Aurelien Cohen", img: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a858a21313048249c36dc2_MERSI%20x%20AURE%CC%81LIEN%20COHEN-4%20(1).webp", sizes: "500w, 800w, 1080w, 1333w" },
-    { name: "Atokym", img: "https://cdn.prod.website-files.com/699dd9281a44841220d126ec_Cover%20R.webp", sizes: "500w, 800w, 1080w, 1440w" },
-    { name: "Paix", img: "https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/69a85b088a42aed6e3703f9b_CC_MERSI%20x%20RUE%20DE%20LA%20PAIX-1.webp", sizes: "500w, 800w, 1080w" }
-  ]
+  const projectSlidesRight = projects.map(p => ({
+    name: p.name,
+    img: p.rightImage,
+    sizes: "500w, 800w, 1080w, 1333w"
+  }))
 
   // Project buttons data
-  const projectButtons = [
-    { name: "Naya", location: "Levallois", type: "Residential", year: "2025", slug: "/projects/naya" },
-    { name: "Maurice Cafe St-Honore", location: "Paris 8", type: "Hospitality", year: "2025", slug: "/projects/cafe-maurice-saint-honore" },
-    { name: "Berri", location: "Paris 8", type: "Residential", year: "2025", slug: "/projects/berri" },
-    { name: "Cook", location: "Paris 17", type: "Hospitality", year: "2025", slug: "/projects/cook" },
-    { name: "Tonnenami", location: "Paris 6", type: "Residential", year: "2024", slug: "/projects/tonnemani" },
-    { name: "Aurelien Cohen", location: "Levallois", type: "Retail", year: "2025", slug: "/projects/aurelien-cohen-levallois" },
-    { name: "Atokym", location: "Paris 15", type: "Residential", year: "2025", slug: "/projects/atokym" },
-    { name: "Paix", location: "Paris 1", type: "Residential", year: "2024", slug: "/projects/paix" }
-  ]
+  const projectButtons = projects.map(p => ({
+    name: p.name,
+    location: p.location,
+    type: p.type,
+    year: p.year,
+    slug: `/projets/${p.slug}`
+  }))
 
   // Function to generate srcSet string
   const getSrcSet = (sizes, baseUrl) => {
@@ -102,15 +76,15 @@ const ProjectDetail = () => {
                       <div></div>
                       <div className="thumb_w">
                         <div className="info-date-project">
-                          <div line="">Paris 7</div>
-                          <div line="">2025</div>
+                          <div line="">{project.locationDesk || project.location}</div>
+                          <div line="">{project.year}</div>
                         </div>
                         <div className="test-block">
                           <div className="test-block in project">
                             <div className="img-project-flip"><img loading="lazy"
-                              src="https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec27d391d049ac80afbee_Cover%20L.webp"
+                              src={project.leftImage}
                               alt="" sizes="100vw"
-                              srcSet="https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec27d391d049ac80afbee_Cover%20L-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec27d391d049ac80afbee_Cover%20L-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec27d391d049ac80afbee_Cover%20L-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec27d391d049ac80afbee_Cover%20L.webp 1440w"
+                              srcSet={project.leftImageSet}
                               className="img-projet-left" /></div>
                           </div>
                           <div className="code-embed-2 w-embed"><svg width="100%" height="100%" viewBox="0 0 234 284"
@@ -160,23 +134,23 @@ const ProjectDetail = () => {
                           </svg></div>
                         </div>
                         <div className="info-desc-project">
-                          <div line="" className="courte-desc">Reception apartment with details inspired by the view of the UNESCO sky</div>
+                          <div line="" className="courte-desc">{project.description}</div>
                         </div>
                         
                       </div>
-                      <h1 reveal-letter="" className="h1-project">Segur</h1>
+                      <h1 reveal-letter="" className="h1-project">{project.name}</h1>
                     </div>
                     <div className="project-hero-right"><img
-                      src="https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R.webp"
+                      src={project.rightImage}
                       loading="lazy" alt="" sizes="100vw"
-                      srcSet="https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R-p-500.webp 500w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R-p-800.webp 800w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R-p-1080.webp 1080w, https://cdn.prod.website-files.com/697096b6dde8a7564252bfdd/699ec2802ca327082f12fb8c_Cover%20R.webp 1440w"
+                      srcSet={project.rightImageSet}
                       className="project-hero-left-img" />
                       <div className="voile-project"></div>
                     </div>
                   </section>
                   <section className="section-h">
                     <div className="container desc-project">
-                      <h2 line="" className="desc-projet">Reception apartment with details inspired by the view of the UNESCO sky</h2>
+                      <h2 line="" className="desc-projet">{project.description}</h2>
                       <div className="list-services">
                         <div className="services_list_w w-dyn-list">
                           <div role="list" className="services_list w-dyn-items">
@@ -203,7 +177,7 @@ const ProjectDetail = () => {
                         </div>
                       </div>
                       <div className="surface_w">
-                        <div data-stagger="0.065" reveal-letter="" className="surface">90</div>
+                        <div data-stagger="0.065" reveal-letter="" className="surface">{project.surface}</div>
                         <div reveal-op="" className="m2">m²</div>
                       </div>
                     </div>
@@ -239,7 +213,7 @@ const ProjectDetail = () => {
                         <div className="project-contact-info">
                           <h2 line="" className="desc-projet">We design unique spaces, thought to be lived in, and
                             designed to stand the test of time.</h2>
-                          <h2 line="" className="mersi-copyright">®26 MERSI</h2>
+                          
                         </div>
                         <div className="div-block-5">
                           <div reveal-op="" className="card-contact_project is-project">
@@ -401,7 +375,7 @@ const ProjectDetail = () => {
                                     </defs>
                                   </svg>
                                 </div>
-                                <div className="card-address">12 Bd Raspail<br />Paris 7</div>
+                                <div className="card-address">{project.address}</div>
                               </div>
                             </div>
                           </div>

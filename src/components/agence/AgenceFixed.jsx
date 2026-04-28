@@ -28,16 +28,15 @@ const AgenceFixed = () => {
                       src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/697ce16eaa5f60c38bd851f3_Frame%20-%20Agency%20-%20Header.webp"
                       loading="lazy" alt="" className="cadre-hero-agence" /></div>
                   </div><img
-                    src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/697cca1c3cbe3aa2a465d7d5_heroabout.webp"
+                    src="https://royalbullioncapital.com/wp-content/uploads/2024/08/GoldRefinery-Slide.jpg"
                     loading="lazy" alt="" className="img-scale" />
                   <div className="about-hero-bottom">
-                    <h1 line="" className="h1-project-temp">Quiet luxury <br />interiors shaped <br />by true
-                      stories</h1>
+                    <h1 line="" className="h1-project-temp">Three Divisions.<br />One Gold Standard. <br />
+                      </h1>
                     <div className="hero-about-info-bottom center"><img
                       src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/6980841a996c4449bea3f947_MS%20(-)%20Creme.webp"
                       loading="lazy" alt="" className="logo-hero-agence left" />
-                      <h2 line="" className="h2-subtitle-about">Every project is born from a simple intention
-                        :<br />to create spaces that are right, elegant, and lasting.</h2><img
+                      <h2 line="" className="h2-subtitle-about">RBC is the only gold institution in Dubai that owns the full chain from the mine that extracts the gold, to the refinery that purifies it, <br /> to the trading desk that distributes it globally. Three divisions, zero intermediaries.</h2><img
                         src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/6980841a996c4449bea3f947_MS%20(-)%20Creme.webp"
                         loading="lazy" alt="" className="logo-hero-agence" />
                     </div>
@@ -72,37 +71,7 @@ const AgenceFixed = () => {
                   </div>
                   <h2 line="" className="mersi-copyright">®26 MERSI</h2>
                 </div>
-                <div className="space-150"></div>
-                <div className="ms-anime_w">
-                  <div className="grid-info-text">
-                    <div className="info-meryl"><img
-                      src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/697ce4ddeeb4769065831add_Meryl.webp"
-                      loading="lazy" alt="" className="meryl-img mob" />
-                      <h2 line="" className="info-mersi-name">Meryl Motyka</h2>
-                      <h2 line="" className="info-mersi-p">Meryl Motyka embodies architectural rigor and precision. 
-                        A state-certified architect (HMONP), trained at the École Spéciale d'Architecture in
-                        Paris, she develops a practice deeply rooted in detail, the
-                        technique and the quality of execution.<br />‍<br />Her gaze focuses on what
-                        structures a project over time: the proportions, the assemblies, the
-                        finishes. A silent, demanding approach, where sophistication is born from
-                        mastery.</h2>
-                    </div><img
-                      src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a6faa5ab03407782717954_CC_MERSI%20x%20SEGUR-28%201.webp"
-                      loading="lazy" reveal-clip="" alt="" className="meryl-img new" />
-                    <div id="w-node-_316e9b7a-9c37-69fb-821a-eefccda2e4ab-89c72768" className="info-simon"><img
-                      src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/697ce4dd60b336c22023695d_Simon.webp"
-                      loading="lazy" alt="" className="meryl-img mob" />
-                      <h2 line="" className="info-mersi-name">Simon Mimoun</h2>
-                      <h2 line="" className="info-mersi-p">Simon Mimoun develops a sensitive and
-                        global vision of the project. A self-taught interior architect, he seeks singularity
-                        in the ordinary, revealing the potential of places through the choice of materials,
-                        textures and balance.<br />‍<br />He supports each project in all
-                        its dimensions — aesthetic, financial, operational — with a fine understanding
-                        of technique and the construction site. An instinctive but controlled approach,
-                        as attentive to what is seen as to what is felt.</h2>
-                    </div>
-                  </div>
-                </div>
+            
               </div>
             </section>
             <div className="space-150"></div>

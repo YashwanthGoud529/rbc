@@ -1,0 +1,54 @@
+.news-letter-card.is-contact {
+    background-color: #dcd4c8;
+    height: 100%;
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-form {
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 1.5rem;
+    display: table-row;
+}
+
+.field-form {
+    color: var(--off-black);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background-color: #0000;
+    border: 0 solid #000;
+    border-bottom-width: .05rem;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    padding: 0px 0 0.5rem;
+    font-family: Doner, Arial, sans-serif;
+    font-size: .5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 13px;
+    min-width: 220px;
+}
+
+.news-letter-card {
+    background-color: #beb4a780;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+    margin: .4375rem 0 .4375rem .4375rem;
+    padding: 1rem;
+    display: flex;
+}.news-letter-card {
+    background-color: #beb4a780;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+    margin: 1.4375rem 0 .4375rem .4375rem;
+    padding: 1rem;
+    display: flex;
+}
