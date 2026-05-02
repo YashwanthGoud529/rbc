@@ -1,40 +1,47 @@
-import React, { useEffect } from 'react'
-import { projects } from '../../data/projects'
+import React from 'react'
 
 const Mine = () => {
-  // Find project by slug
-  const project = projects.find(p => p.slug === 'mine') || projects[0];
 
-  const services = project.services || []
+  const ecuadorProjects = [
+    {
+      id: "megarmi",
+      name: "MEGARMI",
+      description: "Located in a mineral-rich zone, this project includes open-pit and underground mining rights, currently in advanced exploration with promising geological surveys indicating high-grade ore reserves suitable for commercial-scale tokenization.",
+      location: "https://www.google.com/maps?q=-4.107,-78.645"
+    },
+    {
+      id: "nueva-fortuna",
+      name: "NUEVA FORTUNA",
+      description: "An established concession with a proven track record of consistent gold output over the past decade. Recent technological upgrades and strategic positioning enhance its processing capabilities and offer low-cost extraction potential.",
+      location: "https://www.google.com/maps/place/1%C2%B006'00.0%22S+77%C2%B056'06.0%22W/@-1.1,-77.9375749,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-1.1!4d-77.935?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+      id: "diamante",
+      name: "DIAMANTE",
+      description: "A newly licensed operation with significant potential for both gold and polymetallic minerals. Exploration data highlights deep vein structures, and the site is prepared for immediate pilot extraction and token-backed expansion funding.",
+      location: "https://www.google.com/maps?q=-3.756,-78.631"
+    },
+    {
+      id: "zamora-minerzam",
+      name: "ZAMORA MINERZAM",
+      description: "A newly licensed operation with significant potential for both gold and polymetallic minerals. Exploration data highlights deep vein structures, and the site is prepared for immediate pilot extraction and token-backed expansion funding.",
+      location: "https://www.google.com/maps?q=-3.756,-78.631"
+    },
+    {
+      id: "aluvi",
+      name: "ALUVI",
+      description: "Proyecto Minero - Aluvi Ecuaminas Nangaritza. An alluvial gold project with extensive surface deposits, ideal for eco-friendly extraction techniques. This project lends itself well to phased development, community-based crowdfunding, and sustainable practices.",
+      location: "https://www.google.com/maps?q=-4.107,-78.645"
+    },
+    {
+      id: "ruta-de-cobre",
+      name: "RUTA DE COBRE",
+      description: "Primarily a copper mine, this project offers valuable gold by-products in its composition, providing an excellent opportunity for diversification and tokenization. RBC will be responsible for securing operational rights, permits, and licenses.",
+      location: "https://www.google.com/maps?q=-4.107,-78.645"
+    }
+  ];
 
-  const galleryImages = project.galleryImages || []
-
-  const contactLinks = [
-    { title: "Mail", content: "support@royalbullioncapital.com", href: "mailto:support@royalbullioncapital.com" },
-    { title: "WhatsApp", content: "Let's talk", href: "https://wa.me/+9715752082", external: true },
-    { title: "Phone", content: "+971 4 575 2082", href: "tel:+97145752082" }
-  ]
-
-  const projectSlidesLeft = projects.map(p => ({
-    name: p.name,
-    img: p.leftImage,
-    sizes: "500w, 800w, 1080w, 1333w"
-  }))
-
-  const projectSlidesRight = projects.map(p => ({
-    name: p.name,
-    img: p.rightImage,
-    sizes: "500w, 800w, 1080w, 1333w"
-  }))
-
-  const projectButtons = projects.map(p => ({
-    name: p.name,
-    location: p.location,
-    type: p.type,
-    year: p.year,
-    slug: p.slug === '1-mg' ? '/1-mg' : `/${p.slug}`
-  }))
-
+  const services = ecuadorProjects.map(p => p.name);
   return (
     <div>
       <div className="page-wrapper">
@@ -48,16 +55,18 @@ const Mine = () => {
                       <div></div>
                       <div className="thumb_w">
                         <div className="info-date-project">
-                          <div line="">{project.locationDesk || project.location}</div>
-                          <div line="">{project.year}</div>
+                          <div line="">Mine</div>
+                          <div line="">2025</div>
                         </div>
                         <div className="test-block">
                           <div className="test-block in project">
-                            <div className="img-project-flip"><img loading="lazy"
-                              src={project.leftImage}
-                              alt="" sizes="100vw"
-                              srcSet={project.leftImageSet}
-                              className="img-projet-left" /></div>
+                            <div className="img-project-flip">
+                              <img loading="lazy"
+                                src="/images/home-slider/Mine1.jpg"
+                                alt="" sizes="100vw"
+                                srcSet="/images/home-slider/Mine1.jpg"
+                                className="img-projet-left" />
+                            </div>
                           </div>
                           <div className="code-embed-2 w-embed"><svg width="100%" height="100%" viewBox="0 0 234 284"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,11 +114,9 @@ const Mine = () => {
                             </defs>
                           </svg></div>
                         </div>
-                        <div className="info-desc-project">
-                          <div line="" className="courte-desc">{project.description}</div>
-                        </div>
+                   
                       </div>
-                      <h1 reveal-letter="" className="h1-project text-gold">{project.name}</h1>
+                      <h1 reveal-letter="" className="h1-project text-gold">Mine</h1>
                     </div>
                     <div className="project-hero-right">
                       <img
@@ -122,35 +129,60 @@ const Mine = () => {
                   </section>
                   <section className="section-h">
                     <div className="container desc-project">
-                      <h2 line="" className="desc-projet">{project.description}</h2>
+                      <h2 line="" className="desc-projet">
+                        Our Ecuador Projects: A Foundation of Rich Potential
+                      </h2>
+                      <p className="desc-projet-sub" style={{ fontSize: '1rem', lineHeight: '1.6', marginBottom: '40px', maxWidth: '800px', color: '#1a1a1a', opacity: '0.8' }}>
+                        The Joint Venture Agreement  <br />  specifically targets five exceptional  mining projects   <br />  The Joint Venture Agreement specifically  <br />  targets five exceptional mining projects
+                      </p>
                       <div className="list-services">
                         <div className="services_list_w w-dyn-list">
-                          <div role="list" className="services_list w-dyn-items">
-                            {services.map((service, index) => (
-                              <div key={index} role="listitem" className="services_item w-dyn-item">
+                          <div className="services_list w-dyn-items" style={{ display: 'flex', flexDirection: 'column', padding: '20px 0' }}>
+                            {services.map((item, index) => (
+                              <div key={index} className="services_item w-dyn-item">
                                 <div className="line bottom"></div>
+
                                 <div className="div-block-3">
-                                  <div reveal-op="" className="code-embed-3 w-embed">
-                                    <svg width="100%" height="100%" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path
-                                        d="M4.71354 10C4.62674 9.43576 4.375 8.82812 3.95833 8.17708C3.55035 7.52604 2.96875 6.91406 2.21354 6.34115C1.44965 5.75955 0.711806 5.39931 0 5.26042V4.71354C0.720486 4.54861 1.41927 4.22743 2.09635 3.75C2.77344 3.27257 3.34635 2.70399 3.8151 2.04427C4.28385 1.37587 4.58333 0.694444 4.71354 0H5.26042C5.33854 0.442708 5.49479 0.889757 5.72917 1.34115C5.97222 1.79253 6.28038 2.22656 6.65365 2.64323C7.02691 3.05122 7.43924 3.42014 7.89062 3.75C8.57639 4.23611 9.27951 4.55729 10 4.71354V5.26042C9.51389 5.3559 9.01476 5.55121 8.5026 5.84635C7.99913 6.14149 7.53038 6.48871 7.09635 6.88802C6.66233 7.28733 6.30642 7.70833 6.02865 8.15104C5.6033 8.82812 5.34722 9.44444 5.26042 10H4.71354ZM4.89583 9.6875H5.07812C5.12153 9.23611 5.19097 8.78472 5.28646 8.33333C5.39062 7.87326 5.50781 7.44792 5.63802 7.05729C5.77691 6.66667 5.92014 6.34549 6.06771 6.09375C6.36285 5.92882 6.71441 5.77691 7.1224 5.63802C7.53906 5.49913 7.96875 5.38194 8.41146 5.28646C8.86285 5.19097 9.27951 5.13021 9.66146 5.10417V4.92187C9.27951 4.88715 8.85851 4.82205 8.39844 4.72656C7.94705 4.6224 7.51302 4.50087 7.09635 4.36198C6.67969 4.21441 6.33681 4.0625 6.06771 3.90625C5.92014 3.64583 5.77691 3.32465 5.63802 2.94271C5.50781 2.55208 5.39062 2.13542 5.28646 1.69271C5.19097 1.24132 5.12153 0.78993 5.07812 0.338541H4.89583C4.86111 0.746527 4.79601 1.17187 4.70052 1.61458C4.61372 2.04861 4.50087 2.46528 4.36198 2.86458C4.22309 3.26389 4.07118 3.61111 3.90625 3.90625C3.62847 4.0625 3.28559 4.21441 2.8776 4.36198C2.46962 4.50087 2.03993 4.6224 1.58854 4.72656C1.13715 4.82205 0.711806 4.88715 0.3125 4.92187V5.10417C0.711806 5.13021 1.13281 5.19097 1.57552 5.28646C2.01823 5.38194 2.44358 5.49913 2.85156 5.63802C3.25955 5.77691 3.61111 5.92882 3.90625 6.09375C4.07118 6.37153 4.21875 6.71441 4.34896 7.1224C4.48785 7.5217 4.60503 7.94705 4.70052 8.39844C4.79601 8.84115 4.86111 9.27083 4.89583 9.6875Z"
-                                        fill="#1A1A1A" />
-                                    </svg>
+                                  <div className="code-embed-3 w-embed">
+                                    {/* SVG */}
                                   </div>
-                                  <h3 line="" className="heading">{service.name}</h3>
+
+                                  <a href={`#${ecuadorProjects[index].id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                                    <h3 className="heading">{item}</h3>
+                                  </a>
                                 </div>
-                                <div reveal-letter="" className="rank">
-                                  {service.id.toString().padStart(2, '0')}
+
+                                <div className="rank">
+                                  {String(index + 1).padStart(2, "0")}
                                 </div>
-                                <div className="line top"></div>
+
+                                {index === services.length - 1 && (
+                                  <div className="line top"></div>
+                                )}
                               </div>
                             ))}
                           </div>
                         </div>
                       </div>
-                      <div className="surface_w">
-                        <div data-stagger="0.065" reveal-letter="" className="surface">{project.surface}</div>
-                        <div reveal-op="" className="m2">m²</div>
+
+                    </div>
+                  </section>
+                  <section className="section-h">
+                    <div className="container">
+                      <div className="projects-grid">
+                        {ecuadorProjects.map(project => (
+                          <div key={project.id} id={project.id} className="ecuador-project-item">
+                            <h2 className="project-title">{project.name}</h2>
+                            <p className="project-desc">{project.description}</p>
+                            <a href={project.location} target="_blank" rel="noopener noreferrer" className="location-map-card">
+                              <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                              </svg>
+                              <span className="label">Location Map</span>
+                            </a>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </section>
@@ -187,17 +219,21 @@ const Mine = () => {
                   <section className="project-hero_w test">
                     <div className="gallery_list_w w-dyn-list">
                       <div role="list" className="gallery_list w-dyn-items">
-                        {galleryImages.map((image, index) => (
-                          <div key={index} role="listitem" className="gallery_item w-dyn-item w-dyn-repeater-item">
-                            <img
-                              src={image.src}
-                              loading="eager"
-                              reveal-clip=""
-                              alt={image.alt}
-                              sizes="100vw"
-                            />
-                          </div>
-                        ))}
+                        <div role="listitem" className="gallery_item w-dyn-item w-dyn-repeater-item">
+                          <img src="https://royalbullioncapital.com/wp-content/uploads/2026/04/Location-RBC-1024x592-1.jpg" loading="eager" reveal-clip="" alt="M" sizes="100vw" />
+                        </div>
+                        <div role="listitem" className="gallery_item w-dyn-item w-dyn-repeater-item">
+                          <img src="/images/home-slider/Mine1.jpg" loading="eager" reveal-clip="" alt="M" sizes="100vw" />
+                        </div>
+                        <div role="listitem" className="gallery_item w-dyn-item w-dyn-repeater-item">
+                          <img src="/images/home-slider/Mine2.jpg" loading="eager" reveal-clip="" alt="L" sizes="100vw" />
+                        </div>
+                        <div role="listitem" className="gallery_item w-dyn-item w-dyn-repeater-item">
+                          <img src="/images/home-slider/Mine1.jpg" loading="eager" reveal-clip="" alt="S" sizes="100vw" />
+                        </div>
+                        <div role="listitem" className="gallery_item w-dyn-item w-dyn-repeater-item">
+                          <img src="/images/home-slider/Mine2.jpg" loading="eager" reveal-clip="" alt="M" sizes="100vw" />
+                        </div>
                       </div>
                     </div>
                   </section>
@@ -271,34 +307,62 @@ const Mine = () => {
                                 <img
                                   src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/697789c870fd66c6966c9776_MS%20(-)%20Creme.webp"
                                   loading="lazy" alt="" className="card-ms-svg" />
-                                <div className="card-address">{project.address}</div>
+                                <div className="card-address">Place des Vosges, Paris 4</div>
                               </div>
                             </div>
                           </div>
                           <div className="list-contact_project">
-                           
-                            {contactLinks.map((link, index) => (
-                              <a key={index}
-                                href={link.href}
-                                {...(link.external && { target: "_blank" })}
-                                className="link-contact w-inline-block">
-                                <div className="line bottom"></div>
-                                <div className="contact-link-project">
-                                  <div>
-                                    <div line="" className="title-link-contact">{link.title}</div>
-                                    <div line="" className="content-link-contact">{link.content}</div>
-                                  </div>
-                                  <div className="arrow-submit-form w-embed">
-                                    <svg width="100%" height="100%" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path fillRule="evenodd" clipRule="evenodd"
-                                        d="M6.97361 0.199952L0.200012 0.199951L0.200012 1.42636L6.10593 1.42636L0.412716 7.11956L1.2804 7.98725L6.97361 2.29404L6.97361 8.19995L8.20001 8.19995L8.20001 1.42636L8.20001 0.199953L6.97361 0.199952Z"
-                                        fill="#1A1A1A" stroke="#1A1A1A" strokeWidth="0.4" />
-                                    </svg>
-                                  </div>
+                            <a href="mailto:support@royalbullioncapital.com" className="link-contact w-inline-block">
+                              <div className="line bottom"></div>
+                              <div className="contact-link-project">
+                                <div>
+                                  <div line="" className="title-link-contact">Mail</div>
+                                  <div line="" className="content-link-contact">support@royalbullioncapital.com</div>
                                 </div>
-                                <div className="line top"></div>
-                              </a>
-                            ))}
+                                <div className="arrow-submit-form w-embed">
+                                  <svg width="100%" height="100%" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" clipRule="evenodd"
+                                      d="M6.97361 0.199952L0.200012 0.199951L0.200012 1.42636L6.10593 1.42636L0.412716 7.11956L1.2804 7.98725L6.97361 2.29404L6.97361 8.19995L8.20001 8.19995L8.20001 1.42636L8.20001 0.199953L6.97361 0.199952Z"
+                                      fill="#1A1A1A" stroke="#1A1A1A" strokeWidth="0.4" />
+                                  </svg>
+                                </div>
+                              </div>
+                              <div className="line top"></div>
+                            </a>
+                            <a href="https://wa.me/+9715752082" target="_blank" className="link-contact w-inline-block">
+                              <div className="line bottom"></div>
+                              <div className="contact-link-project">
+                                <div>
+                                  <div line="" className="title-link-contact">WhatsApp</div>
+                                  <div line="" className="content-link-contact">Let's talk</div>
+                                </div>
+                                <div className="arrow-submit-form w-embed">
+                                  <svg width="100%" height="100%" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" clipRule="evenodd"
+                                      d="M6.97361 0.199952L0.200012 0.199951L0.200012 1.42636L6.10593 1.42636L0.412716 7.11956L1.2804 7.98725L6.97361 2.29404L6.97361 8.19995L8.20001 8.19995L8.20001 1.42636L8.20001 0.199953L6.97361 0.199952Z"
+                                      fill="#1A1A1A" stroke="#1A1A1A" strokeWidth="0.4" />
+                                  </svg>
+                                </div>
+                              </div>
+                              <div className="line top"></div>
+                            </a>
+                            <a href="tel:+97145752082" className="link-contact w-inline-block">
+                              <div className="line bottom"></div>
+                              <div className="contact-link-project">
+                                <div>
+                                  <div line="" className="title-link-contact">Phone</div>
+                                  <div line="" className="content-link-contact">+971 4 575 2082</div>
+                                </div>
+                                <div className="arrow-submit-form w-embed">
+                                  <svg width="100%" height="100%" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" clipRule="evenodd"
+                                      d="M6.97361 0.199952L0.200012 0.199951L0.200012 1.42636L6.10593 1.42636L0.412716 7.11956L1.2804 7.98725L6.97361 2.29404L6.97361 8.19995L8.20001 8.19995L8.20001 1.42636L8.20001 0.199953L6.97361 0.199952Z"
+                                      fill="#1A1A1A" stroke="#1A1A1A" strokeWidth="0.4" />
+                                  </svg>
+                                </div>
+                              </div>
+                              <div className="line top"></div>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -307,68 +371,131 @@ const Mine = () => {
                   <section className="project-slider_w">
                     <div className="project-slider_list_w left w-dyn-list">
                       <div role="list" className="project-slider_list w-dyn-items">
-                        {projectSlidesLeft.map((slide, index) => (
-                          <div key={index} slider-name={slide.name} role="listitem" className="project-slider_item w-dyn-item">
-                            <div className="slider-left project">
-                              <img
-                                src={slide.img}
-                                loading="eager"
-                                alt=""
-                                sizes="100vw"
-                              />
-                            </div>
-                          </div>
-                        ))}
+                        <div slider-name="Mine" role="listitem" className="project-slider_item w-dyn-item">
+                          <div className="slider-left project"><img src="/images/home-slider/Mine1.jpg" loading="eager" alt="" sizes="100vw" /></div>
+                        </div>
+                        <div slider-name="Refine" role="listitem" className="project-slider_item w-dyn-item">
+                          <div className="slider-left project"><img src="/images/home-slider/refine1.jpg" loading="eager" alt="" sizes="100vw" /></div>
+                        </div>
+                        <div slider-name="Trading" role="listitem" className="project-slider_item w-dyn-item">
+                          <div className="slider-left project"><img src="/images/home-slider/Trading1.jpg" loading="eager" alt="" sizes="100vw" /></div>
+                        </div>
+                        <div slider-name="1 MG" role="listitem" className="project-slider_item w-dyn-item">
+                          <div className="slider-left project"><img src="/images/home-slider/1mg1.jpg" loading="eager" alt="" sizes="100vw" /></div>
+                        </div>
                       </div>
                     </div>
                     <div className="project-slider_list_w right w-dyn-list">
                       <div role="list" className="project-slider_list w-dyn-items">
-                        {projectSlidesRight.map((slide, index) => (
-                          <div key={index} slider-name={slide.name} role="listitem" className="project-slider_item w-dyn-item">
-                            <div className="slider-right project">
-                              <img
-                                src={slide.img}
-                                loading="eager"
-                                alt=""
-                                sizes="100vw"
-                              />
-                            </div>
-                          </div>
-                        ))}
+                        <div slider-name="Mine" role="listitem" className="project-slider_item w-dyn-item">
+                          <div className="slider-right project"><img src="/images/home-slider/Mine2.jpg" loading="eager" alt="" sizes="100vw" /></div>
+                        </div>
+                        <div slider-name="Refine" role="listitem" className="project-slider_item w-dyn-item">
+                          <div className="slider-right project"><img src="/images/home-slider/refine2.jpg" loading="eager" alt="" sizes="100vw" /></div>
+                        </div>
+                        <div slider-name="Trading" role="listitem" className="project-slider_item w-dyn-item">
+                          <div className="slider-right project"><img src="/images/home-slider/Trading2.jpg" loading="eager" alt="" sizes="100vw" /></div>
+                        </div>
+                        <div slider-name="1 MG" role="listitem" className="project-slider_item w-dyn-item">
+                          <div className="slider-right project"><img src="/images/home-slider/1mg2.jpg" loading="eager" alt="" sizes="100vw" /></div>
+                        </div>
                       </div>
                     </div>
                     <div className="project-slider_btn_w">
                       <div className="project-slider_btn_list_w w-dyn-list">
                         <div role="list" className="project-slider_btn_list w-dyn-items">
-                          {projectButtons.map((projectBtn, index) => (
-                            <div key={index} slider-name={projectBtn.name} role="listitem" className="project-slider_btn_item w-dyn-item">
-                              <a data-hover-link-ignore="" flip-transition="" href={projectBtn.slug} className="project-slider-link w-inline-block">
-                                <div className="project-slider_btn">
-                                  <div className="info-project-left">
-                                    <h2 className="h2-project-btn">{projectBtn.name}</h2>
-                                    <div className="hide-tab">{projectBtn.location}</div>
+                          <div slider-name="Mine" role="listitem" className="project-slider_btn_item w-dyn-item">
+                            <a data-hover-link-ignore="" flip-transition="" href="/mine" className="project-slider-link w-inline-block">
+                              <div className="project-slider_btn" style={{ backgroundColor: '#62a86fff' }}>
+                                <div className="info-project-left">
+                                  <h2 className="h2-project-btn">Mine</h2>
+                                  <div className="hide-tab">Mine</div>
+                                </div>
+                                <div className="hide-desk">Mine</div>
+                                <img src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/697787feb77e66ac9ab5b2f7_MS%20(%2B)%20Color.webp" loading="lazy" alt="" className="ms-svg-banner project-list" />
+                                <div className="info-project-right">
+                                  <div className="info-project-arrow hide-tab w-embed">
+                                    <svg width="100%" height="100%" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path fillRule="evenodd" clipRule="evenodd" d="M6.97361 0.199952L0.200012 0.199951L0.200012 1.42636L6.10593 1.42636L0.412716 7.11956L1.2804 7.98725L6.97361 2.29404L6.97361 8.19995L8.20001 8.19995L8.20001 1.42636L8.20001 0.199953L6.97361 0.199952Z" fill="#1A1A1A" stroke="#1A1A1A" strokeWidth="0.4" />
+                                    </svg>
                                   </div>
-                                  <div className="hide-desk">{projectBtn.location}</div>
-                                  <img
-                                    src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/697787feb77e66ac9ab5b2f7_MS%20(%2B)%20Color.webp"
-                                    loading="lazy" alt="" className="ms-svg-banner project-list" />
-                                  <div className="info-project-right">
-                                    <div className="info-project-arrow hide-tab w-embed">
-                                      <svg width="100%" height="100%" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fillRule="evenodd" clipRule="evenodd"
-                                          d="M6.97361 0.199952L0.200012 0.199951L0.200012 1.42636L6.10593 1.42636L0.412716 7.11956L1.2804 7.98725L6.97361 2.29404L6.97361 8.19995L8.20001 8.19995L8.20001 1.42636L8.20001 0.199953L6.97361 0.199952Z"
-                                          fill="#1A1A1A" stroke="#1A1A1A" strokeWidth="0.4" />
-                                      </svg>
-                                    </div>
-                                    <div className="info-etiquette">
-                                      <div className="hide-tab">{projectBtn.year}</div>
-                                      <div>{projectBtn.type}</div>
-                                    </div>
+                                  <div className="info-etiquette">
+                                    <div className="hide-tab">2025</div>
+                                    <div>Residential</div>
                                   </div>
                                 </div>
-                              </a>
-                            </div>
-                          ))}
+                              </div>
+                            </a>
+                          </div>
+                          <div slider-name="Refine" role="listitem" className="project-slider_btn_item w-dyn-item">
+                            <a data-hover-link-ignore="" flip-transition="" href="/refine" className="project-slider-link w-inline-block">
+                              <div className="project-slider_btn" style={{ backgroundColor: '#4e4846ff' }}>
+                                <div className="info-project-left">
+                                  <h2 className="h2-project-btn">Refine</h2>
+                                  <div className="hide-tab">Refine</div>
+                                </div>
+                                <div className="hide-desk">Refine</div>
+                                <img src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/697787feb77e66ac9ab5b2f7_MS%20(%2B)%20Color.webp" loading="lazy" alt="" className="ms-svg-banner project-list" />
+                                <div className="info-project-right">
+                                  <div className="info-project-arrow hide-tab w-embed">
+                                    <svg width="100%" height="100%" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path fillRule="evenodd" clipRule="evenodd" d="M6.97361 0.199952L0.200012 0.199951L0.200012 1.42636L6.10593 1.42636L0.412716 7.11956L1.2804 7.98725L6.97361 2.29404L6.97361 8.19995L8.20001 8.19995L8.20001 1.42636L8.20001 0.199953L6.97361 0.199952Z" fill="#1A1A1A" stroke="#1A1A1A" strokeWidth="0.4" />
+                                    </svg>
+                                  </div>
+                                  <div className="info-etiquette">
+                                    <div className="hide-tab">2025</div>
+                                    <div>Residential</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div slider-name="Trading" role="listitem" className="project-slider_btn_item w-dyn-item">
+                            <a data-hover-link-ignore="" flip-transition="" href="/trading" className="project-slider-link w-inline-block">
+                              <div className="project-slider_btn" style={{ backgroundColor: '#f85656ff' }}>
+                                <div className="info-project-left">
+                                  <h2 className="h2-project-btn">Trading</h2>
+                                  <div className="hide-tab">Trading</div>
+                                </div>
+                                <div className="hide-desk">Trading</div>
+                                <img src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/697787feb77e66ac9ab5b2f7_MS%20(%2B)%20Color.webp" loading="lazy" alt="" className="ms-svg-banner project-list" />
+                                <div className="info-project-right">
+                                  <div className="info-project-arrow hide-tab w-embed">
+                                    <svg width="100%" height="100%" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path fillRule="evenodd" clipRule="evenodd" d="M6.97361 0.199952L0.200012 0.199951L0.200012 1.42636L6.10593 1.42636L0.412716 7.11956L1.2804 7.98725L6.97361 2.29404L6.97361 8.19995L8.20001 8.19995L8.20001 1.42636L8.20001 0.199953L6.97361 0.199952Z" fill="#1A1A1A" stroke="#1A1A1A" strokeWidth="0.4" />
+                                    </svg>
+                                  </div>
+                                  <div className="info-etiquette">
+                                    <div className="hide-tab">2025</div>
+                                    <div>Residential</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div slider-name="1 MG" role="listitem" className="project-slider_btn_item w-dyn-item">
+                            <a data-hover-link-ignore="" flip-transition="" href="/1-mg" className="project-slider-link w-inline-block">
+                              <div className="project-slider_btn" style={{ backgroundColor: 'hsla(69, 100%, 64%, 1.00)' }}>
+                                <div className="info-project-left">
+                                  <h2 className="h2-project-btn">1 MG</h2>
+                                  <div className="hide-tab">1 MG</div>
+                                </div>
+                                <div className="hide-desk">1 MG</div>
+                                <img src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/697787feb77e66ac9ab5b2f7_MS%20(%2B)%20Color.webp" loading="lazy" alt="" className="ms-svg-banner project-list" />
+                                <div className="info-project-right">
+                                  <div className="info-project-arrow hide-tab w-embed">
+                                    <svg width="100%" height="100%" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path fillRule="evenodd" clipRule="evenodd" d="M6.97361 0.199952L0.200012 0.199951L0.200012 1.42636L6.10593 1.42636L0.412716 7.11956L1.2804 7.98725L6.97361 2.29404L6.97361 8.19995L8.20001 8.19995L8.20001 1.42636L8.20001 0.199953L6.97361 0.199952Z" fill="#1A1A1A" stroke="#1A1A1A" strokeWidth="0.4" />
+                                    </svg>
+                                  </div>
+                                  <div className="info-etiquette">
+                                    <div className="hide-tab">2025</div>
+                                    <div>Residential</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -384,3 +511,4 @@ const Mine = () => {
 }
 
 export default Mine
+

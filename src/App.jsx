@@ -11,14 +11,13 @@ import Projects from './components/projects/Projects';
 import ProjectDetail from './components/HomeAbout/ProjectDetail';
 import Company from './components/company/Company';
 import Divisions from './components/divisions/Divisions';
-import Mines from './components/mines/Mines';
 import Blogs from './components/blog/Blogs';
 import Shariah from './components/Shariah/Shariah';
 import MinePage from './components/pages/Mine';
 import RefinePage from './components/pages/Refine';
 import TradingPage from './components/pages/Trading';
 import OneMGPage from './components/pages/OneMG';
-import MGCconference from './components/mgc/MGCconference';
+
 
 function AppContent() {
   const location = useLocation();
@@ -282,7 +281,6 @@ function AppContent() {
               <Route path="/company" element={<Company />} />
               <Route path="/projets" element={<Projects />} />
               <Route path="/divisions" element={<Divisions />} />
-              <Route path="/mgc-conference-2026" element={<MGCconference />} />
               <Route path="/blog" element={<Blogs />} />
               <Route path="/shariah" element={<Shariah />} />
               <Route path="/shop" element={<Shop />} />

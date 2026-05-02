@@ -32,7 +32,7 @@ const AgenceFixed = () => {
                     loading="lazy" alt="" className="img-scale" />
                   <div className="about-hero-bottom">
                     <h1 line="" className="h1-project-temp">Three Divisions.<br />One Gold Standard. <br />
-                      </h1>
+                    </h1>
                     <div className="hero-about-info-bottom center"><img
                       src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/6980841a996c4449bea3f947_MS%20(-)%20Creme.webp"
                       loading="lazy" alt="" className="logo-hero-agence left" />
@@ -71,7 +71,7 @@ const AgenceFixed = () => {
                   </div>
                   <h2 line="" className="mersi-copyright">®26 MERSI</h2>
                 </div>
-            
+
               </div>
             </section>
             <div className="space-150"></div>
