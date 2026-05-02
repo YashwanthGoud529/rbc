@@ -114,7 +114,7 @@ const Mine = () => {
                             </defs>
                           </svg></div>
                         </div>
-                   
+
                       </div>
                       <h1 reveal-letter="" className="h1-project text-gold">Mine</h1>
                     </div>
@@ -132,7 +132,7 @@ const Mine = () => {
                       <h2 line="" className="desc-projet">
                         Our Ecuador Projects: A Foundation of Rich Potential
                       </h2>
-                      <p className="desc-projet-sub" style={{ fontSize: '1rem', lineHeight: '1.6', marginBottom: '40px', maxWidth: '800px', color: '#1a1a1a', opacity: '0.8' }}>
+                      <p className="desc-projet-sub" style={{ fontSize: '0.8rem', lineHeight: '1.6', marginBottom: '40px', maxWidth: '800px', color: '#1a1a1a', opacity: '0.8' }}>
                         The Joint Venture Agreement  <br />  specifically targets five exceptional  mining projects   <br />  The Joint Venture Agreement specifically  <br />  targets five exceptional mining projects
                       </p>
                       <div className="list-services">
@@ -406,7 +406,7 @@ const Mine = () => {
                         <div role="list" className="project-slider_btn_list w-dyn-items">
                           <div slider-name="Mine" role="listitem" className="project-slider_btn_item w-dyn-item">
                             <a data-hover-link-ignore="" flip-transition="" href="/mine" className="project-slider-link w-inline-block">
-                              <div className="project-slider_btn" style={{ backgroundColor: '#62a86fff' }}>
+                              <div className="project-slider_btn" style={{ backgroundColor: '#bb893aff' }}>
                                 <div className="info-project-left">
                                   <h2 className="h2-project-btn">Mine</h2>
                                   <div className="hide-tab">Mine</div>

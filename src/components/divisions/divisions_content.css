@@ -16,7 +16,7 @@
 .badge-gold {
   display: inline-block;
   padding: 6px 20px;
-  border: 1px solid #ffc000;
+  border: 1px solid #bb893a;
   border-radius: 100px;
   color: #1a1a1a;
   font-size: 0.9rem;
@@ -26,14 +26,16 @@
 
 /* Headline Styling */
 .headline-main {
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 700;
   line-height: 1.1;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
+  color: #0a2e1e;
+  letter-spacing: -0.02em;
 }
 
 .headline-main span {
-  color: #ffc000;
+  color: #bb893a;
   /* Gold color for "Source" */
 }
 
@@ -55,19 +57,21 @@
 .feature-cards-container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-top: 100px;
+  gap: 12px;
+  margin-top: 40px;
 }
 
 .feature-card {
-  background-color: #000000b0;
-  border-radius: 20px;
-  padding: 60px 35px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 22px 24px;
   display: flex;
   align-items: center;
-  gap: 50px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-left: 4px solid #ffc000;
+  gap: 20px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid #e8e0d0;
+  border-left: 4px solid #bb893a;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .feature-card:hover {
@@ -76,37 +80,36 @@
 }
 
 .feature-icon-wrapper {
-  background-color: #fff;
-  width: 200px;
-  height: 200px;
-  min-width: 200px;
+  background-color: #004a33;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-shrink: 0;
 }
 
 .feature-icon-wrapper svg {
-  width: 60px;
-  height: 60px;
-  color: #00332a;
+  width: 22px;
+  height: 22px;
+  color: #bb893a;
 }
 
 .feature-content h3 {
-  color: #ffc000;
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 8px;
+  color: #0a2e1e;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
   margin-top: 0;
 }
 
 .feature-content p {
-  color: #fff;
-  font-size: 0.95rem;
+  color: #444;
+  font-size: 0.88rem;
   line-height: 1.5;
   margin: 0;
-  opacity: 0.9;
 }
 
 /* Right Column: Text & Images */
@@ -124,7 +127,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 50px;
+  gap: 20px;
 }
 
 .gallery-item-large {

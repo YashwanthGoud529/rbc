@@ -86,57 +86,137 @@ const Refine = () => {
                       <div className="voile-project"></div>
                     </div>
                   </section>
+                  <section className="section-h collaboration-section">
+                    <div className="container" style={{padding:"1rem 2.5rem"}}>
+                      <div className="collaboration-grid">
+                        <div className="collaboration-left">
+                          <div style={{ color: '#004a33', fontWeight: 'bold', marginBottom: '10px', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.9rem' }}>RBC Refinery</div>
+                          <h2 className="collaboration-title">From Raw Ore to Pure Gold.</h2>
+                          <div className="collaboration-text-wrapper">
+                            <p className="collaboration-text">
+                              After extraction from RBC's own mines, gold enters our in-house refinery where it's processed, purified, and certified to international standards. Most gold companies outsource this entirely. We do it ourselves.
+                            </p>
+                            <p className="collaboration-text">
+                              Gold extracted from a mine is rarely pure; it comes mixed with other minerals and impurities. Refining is the process of separating and purifying gold to the standard required for trading, investment, and consumer use.
+                            </p>
+                            <p className="collaboration-text">
+                              The final purity is expressed in parts-per-thousand. <strong>999.9</strong> (called "four nines") is the highest standard in professional bullion markets. RBC's refinery targets international-grade purity on every batch processed.
+                            </p>
+                          </div>
+                        </div>
+                        <div className="collaboration-right">
+                          <img
+                            src="/images/home-slider/refine1.jpg"
+                            alt="RBC Refinery Operations"
+                            className="collaboration-img"
+                            style={{ objectFit: 'cover', height: '100%', maxHeight: '600px' }}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
                   <section className="section-h">
                     <div className="container desc-project">
-                      <h2 line="" className="desc-projet"></h2>
+                      <h2 line="" className="desc-projet">
+                        The RBC Advantage.
+                      </h2>
+                      <p className="desc-projet-sub" style={{ fontSize: '1rem', lineHeight: '1.6', marginBottom: '40px', maxWidth: '800px', color: '#1a1a1a', opacity: '0.8' }}>
+                        Why choose our in-house refinery over external processing chains.
+                      </p>
+                      
                       <div className="list-services">
                         <div className="services_list_w w-dyn-list">
-                          <div role="list" className="services_list w-dyn-items">
-                            <div role="listitem" className="services_item w-dyn-item">
+                          <div className="services_list w-dyn-items" style={{ display: 'flex', flexDirection: 'column', padding: '20px 0' }}>
+                            <div className="services_item w-dyn-item">
                               <div className="line bottom"></div>
                               <div className="div-block-3">
-                                <div reveal-op="" className="code-embed-3 w-embed">
-                                  <svg width="100%" height="100%" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.71354 10C4.62674 9.43576 4.375 8.82812 3.95833 8.17708C3.55035 7.52604 2.96875 6.91406 2.21354 6.34115C1.44965 5.75955 0.711806 5.39931 0 5.26042V4.71354C0.720486 4.54861 1.41927 4.22743 2.09635 3.75C2.77344 3.27257 3.34635 2.70399 3.8151 2.04427C4.28385 1.37587 4.58333 0.694444 4.71354 0H5.26042C5.33854 0.442708 5.49479 0.889757 5.72917 1.34115C5.97222 1.79253 6.28038 2.22656 6.65365 2.64323C7.02691 3.05122 7.43924 3.42014 7.89062 3.75C8.57639 4.23611 9.27951 4.55729 10 4.71354V5.26042C9.51389 5.3559 9.01476 5.55121 8.5026 5.84635C7.99913 6.14149 7.53038 6.48871 7.09635 6.88802C6.66233 7.28733 6.30642 7.70833 6.02865 8.15104C5.6033 8.82812 5.34722 9.44444 5.26042 10H4.71354ZM4.89583 9.6875H5.07812C5.12153 9.23611 5.19097 8.78472 5.28646 8.33333C5.39062 7.87326 5.50781 7.44792 5.63802 7.05729C5.77691 6.66667 5.92014 6.34549 6.06771 6.09375C6.36285 5.92882 6.71441 5.77691 7.1224 5.63802C7.53906 5.49913 7.96875 5.38194 8.41146 5.28646C8.86285 5.19097 9.27951 5.13021 9.66146 5.10417V4.92187C9.27951 4.88715 8.85851 4.82205 8.39844 4.72656C7.94705 4.6224 7.51302 4.50087 7.09635 4.36198C6.67969 4.21441 6.33681 4.0625 6.06771 3.90625C5.92014 3.64583 5.77691 3.32465 5.63802 2.94271C5.50781 2.55208 5.39062 2.13542 5.28646 1.69271C5.19097 1.24132 5.12153 0.78993 5.07812 0.338541H4.89583C4.86111 0.746527 4.79601 1.17187 4.70052 1.61458C4.61372 2.04861 4.50087 2.46528 4.36198 2.86458C4.22309 3.26389 4.07118 3.61111 3.90625 3.90625C3.62847 4.0625 3.28559 4.21441 2.8776 4.36198C2.46962 4.50087 2.03993 4.6224 1.58854 4.72656C1.13715 4.82205 0.711806 4.88715 0.3125 4.92187V5.10417C0.711806 5.13021 1.13281 5.19097 1.57552 5.28646C2.01823 5.38194 2.44358 5.49913 2.85156 5.63802C3.25955 5.77691 3.61111 5.92882 3.90625 6.09375C4.07118 6.37153 4.21875 6.71441 4.34896 7.1224C4.48785 7.5217 4.60503 7.94705 4.70052 8.39844C4.79601 8.84115 4.86111 9.27083 4.89583 9.6875Z" fill="#1A1A1A" />
-                                  </svg>
-                                </div>
-                                <h3 line="" className="heading">Architectural Design</h3>
+                                <h3 className="heading">Full Chain Custody</h3>
                               </div>
-                              <div reveal-letter="" className="rank">01</div>
-                              <div className="line top"></div>
+                              <div className="rank">01</div>
                             </div>
-                            <div role="listitem" className="services_item w-dyn-item">
+                            <div className="services_item w-dyn-item">
                               <div className="line bottom"></div>
                               <div className="div-block-3">
-                                <div reveal-op="" className="code-embed-3 w-embed">
-                                  <svg width="100%" height="100%" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.71354 10C4.62674 9.43576 4.375 8.82812 3.95833 8.17708C3.55035 7.52604 2.96875 6.91406 2.21354 6.34115C1.44965 5.75955 0.711806 5.39931 0 5.26042V4.71354C0.720486 4.54861 1.41927 4.22743 2.09635 3.75C2.77344 3.27257 3.34635 2.70399 3.8151 2.04427C4.28385 1.37587 4.58333 0.694444 4.71354 0H5.26042C5.33854 0.442708 5.49479 0.889757 5.72917 1.34115C5.97222 1.79253 6.28038 2.22656 6.65365 2.64323C7.02691 3.05122 7.43924 3.42014 7.89062 3.75C8.57639 4.23611 9.27951 4.55729 10 4.71354V5.26042C9.51389 5.3559 9.01476 5.55121 8.5026 5.84635C7.99913 6.14149 7.53038 6.48871 7.09635 6.88802C6.66233 7.28733 6.30642 7.70833 6.02865 8.15104C5.6033 8.82812 5.34722 9.44444 5.26042 10H4.71354ZM4.89583 9.6875H5.07812C5.12153 9.23611 5.19097 8.78472 5.28646 8.33333C5.39062 7.87326 5.50781 7.44792 5.63802 7.05729C5.77691 6.66667 5.92014 6.34549 6.06771 6.09375C6.36285 5.92882 6.71441 5.77691 7.1224 5.63802C7.53906 5.49913 7.96875 5.38194 8.41146 5.28646C8.86285 5.19097 9.27951 5.13021 9.66146 5.10417V4.92187C9.27951 4.88715 8.85851 4.82205 8.39844 4.72656C7.94705 4.6224 7.51302 4.50087 7.09635 4.36198C6.67969 4.21441 6.33681 4.0625 6.06771 3.90625C5.92014 3.64583 5.77691 3.32465 5.63802 2.94271C5.50781 2.55208 5.39062 2.13542 5.28646 1.69271C5.19097 1.24132 5.12153 0.78993 5.07812 0.338541H4.89583C4.86111 0.746527 4.79601 1.17187 4.70052 1.61458C4.61372 2.04861 4.50087 2.46528 4.36198 2.86458C4.22309 3.26389 4.07118 3.61111 3.90625 3.90625C3.62847 4.0625 3.28559 4.21441 2.8776 4.36198C2.46962 4.50087 2.03993 4.6224 1.58854 4.72656C1.13715 4.82205 0.711806 4.88715 0.3125 4.92187V5.10417C0.711806 5.13021 1.13281 5.19097 1.57552 5.28646C2.01823 5.38194 2.44358 5.49913 2.85156 5.63802C3.25955 5.77691 3.61111 5.92882 3.90625 6.09375C4.07118 6.37153 4.21875 6.71441 4.34896 7.1224C4.48785 7.5217 4.60503 7.94705 4.70052 8.39844C4.79601 8.84115 4.86111 9.27083 4.89583 9.6875Z" fill="#1A1A1A" />
-                                  </svg>
-                                </div>
-                                <h3 line="" className="heading">Construction Management</h3>
+                                <h3 className="heading">Better Pricing</h3>
                               </div>
-                              <div reveal-letter="" className="rank">02</div>
-                              <div className="line top"></div>
+                              <div className="rank">02</div>
                             </div>
-                            <div role="listitem" className="services_item w-dyn-item">
+                            <div className="services_item w-dyn-item">
                               <div className="line bottom"></div>
                               <div className="div-block-3">
-                                <div reveal-op="" className="code-embed-3 w-embed">
-                                  <svg width="100%" height="100%" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.71354 10C4.62674 9.43576 4.375 8.82812 3.95833 8.17708C3.55035 7.52604 2.96875 6.91406 2.21354 6.34115C1.44965 5.75955 0.711806 5.39931 0 5.26042V4.71354C0.720486 4.54861 1.41927 4.22743 2.09635 3.75C2.77344 3.27257 3.34635 2.70399 3.8151 2.04427C4.28385 1.37587 4.58333 0.694444 4.71354 0H5.26042C5.33854 0.442708 5.49479 0.889757 5.72917 1.34115C5.97222 1.79253 6.28038 2.22656 6.65365 2.64323C7.02691 3.05122 7.43924 3.42014 7.89062 3.75C8.57639 4.23611 9.27951 4.55729 10 4.71354V5.26042C9.51389 5.3559 9.01476 5.55121 8.5026 5.84635C7.99913 6.14149 7.53038 6.48871 7.09635 6.88802C6.66233 7.28733 6.30642 7.70833 6.02865 8.15104C5.6033 8.82812 5.34722 9.44444 5.26042 10H4.71354ZM4.89583 9.6875H5.07812C5.12153 9.23611 5.19097 8.78472 5.28646 8.33333C5.39062 7.87326 5.50781 7.44792 5.63802 7.05729C5.77691 6.66667 5.92014 6.34549 6.06771 6.09375C6.36285 5.92882 6.71441 5.77691 7.1224 5.63802C7.53906 5.49913 7.96875 5.38194 8.41146 5.28646C8.86285 5.19097 9.27951 5.13021 9.66146 5.10417V4.92187C9.27951 4.88715 8.85851 4.82205 8.39844 4.72656C7.94705 4.6224 7.51302 4.50087 7.09635 4.36198C6.67969 4.21441 6.33681 4.0625 6.06771 3.90625C5.92014 3.64583 5.77691 3.32465 5.63802 2.94271C5.50781 2.55208 5.39062 2.13542 5.28646 1.69271C5.19097 1.24132 5.12153 0.78993 5.07812 0.338541H4.89583C4.86111 0.746527 4.79601 1.17187 4.70052 1.61458C4.61372 2.04861 4.50087 2.46528 4.36198 2.86458C4.22309 3.26389 4.07118 3.61111 3.90625 3.90625C3.62847 4.0625 3.28559 4.21441 2.8776 4.36198C2.46962 4.50087 2.03993 4.6224 1.58854 4.72656C1.13715 4.82205 0.711806 4.88715 0.3125 4.92187V5.10417C0.711806 5.13021 1.13281 5.19097 1.57552 5.28646C2.01823 5.38194 2.44358 5.49913 2.85156 5.63802C3.25955 5.77691 3.61111 5.92882 3.90625 6.09375C4.07118 6.37153 4.21875 6.71441 4.34896 7.1224C4.48785 7.5217 4.60503 7.94705 4.70052 8.39844C4.79601 8.84115 4.86111 9.27083 4.89583 9.6875Z" fill="#1A1A1A" />
-                                  </svg>
-                                </div>
-                                <h3 line="" className="heading">Styling</h3>
+                                <h3 className="heading">Quality Control</h3>
                               </div>
-                              <div reveal-letter="" className="rank">03</div>
+                              <div className="rank">03</div>
+                            </div>
+                            <div className="services_item w-dyn-item">
+                              <div className="line bottom"></div>
+                              <div className="div-block-3">
+                                <h3 className="heading">Faster to Market</h3>
+                              </div>
+                              <div className="rank">04</div>
                               <div className="line top"></div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div className="surface_w">
-                        <div data-stagger="0.065" reveal-letter="" className="surface">85</div>
-                        <div reveal-op="" className="m2">m²</div>
+
+                    </div>
+                  </section>
+
+                  <section className="section-h">
+                    <div className="container">
+                      <div className="projects-grid">
+                        <div className="ecuador-project-item">
+                          <h2 className="project-title">Stage 01: Ore Receipt</h2>
+                          <p className="project-desc">Gold-bearing ore arrives from RBC's own mines, fully documented with origin, weight, and estimated gold content recorded on entry to the refinery.</p>
+                          <div className="location-map-card">
+                            <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                            </svg>
+                            <span className="label">Receiving</span>
+                          </div>
+                        </div>
+                        <div className="ecuador-project-item">
+                          <h2 className="project-title">Stage 02: Assaying & Testing</h2>
+                          <p className="project-desc">Fire assay and chemical testing determines exact gold content of each batch before refining begins. A precise baseline is established for every single lot.</p>
+                          <div className="location-map-card">
+                            <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <rect x="6" y="2" width="12" height="20" rx="2" ry="2" /><line x1="12" y1="18" x2="12.01" y2="18" /><line x1="9" y1="14" x2="15" y2="14" /><line x1="9" y1="10" x2="15" y2="10" />
+                            </svg>
+                            <span className="label">Testing</span>
+                          </div>
+                        </div>
+                        <div className="ecuador-project-item">
+                          <h2 className="project-title">Stage 03: Smelting & Purification</h2>
+                          <p className="project-desc">High-temperature smelting followed by chemical separation removes all base metals and impurities progressively increasing gold purity to target grade.</p>
+                          <div className="location-map-card">
+                            <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+                            </svg>
+                            <span className="label">Purification</span>
+                          </div>
+                        </div>
+                        <div className="ecuador-project-item">
+                          <h2 className="project-title">Stage 04: Certification & Hallmarking</h2>
+                          <p className="project-desc">Refined gold is tested one final time, certified to purity standard, and hallmarked. Each bar is fully documented with a unique identifier in the RBC custody system.</p>
+                          <div className="location-map-card">
+                            <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" /><polyline points="10 9 9 9 8 9" />
+                            </svg>
+                            <span className="label">Certification</span>
+                          </div>
+                        </div>
+                        <div className="ecuador-project-item">
+                          <h2 className="project-title">Stage 05: Transfer to Secure Vault</h2>
+                          <p className="project-desc">Certified bars enter RBC's fully insured and audited Dubai vault available for institutional clients, 1mg Gold users, and delivery orders worldwide.</p>
+                          <div className="location-map-card">
+                            <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                            </svg>
+                            <span className="label">Vaulting</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </section>
@@ -329,7 +409,7 @@ const Refine = () => {
                         <div role="list" className="project-slider_btn_list w-dyn-items">
                           <div slider-name="Mine" role="listitem" className="project-slider_btn_item w-dyn-item">
                             <a data-hover-link-ignore="" flip-transition="" href="/mine" className="project-slider-link w-inline-block">
-                              <div className="project-slider_btn" style={{ backgroundColor: '#62a86fff' }}>
+                              <div className="project-slider_btn" style={{ backgroundColor: '#bb893aff' }}>
                                 <div className="info-project-left">
                                   <h2 className="h2-project-btn">Mine</h2>
                                   <div className="hide-tab">Mine</div>

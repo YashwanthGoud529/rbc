@@ -1,0 +1,312 @@
+/* ============================================================
+   trading_content.css — "From Vault to the World"
+   Premium professional section — RBC Bullion Trading
+   ============================================================ */
+
+/* ── Outer Section ── */
+.trading-vault-section {
+  background-color: #f8f5ef;
+  width: 100%;
+  padding: 120px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle texture overlay */
+.trading-vault-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse 80% 60% at 70% 50%, rgba(187, 137, 58, 0.04) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 10% 80%, rgba(10, 46, 30, 0.03) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* ── Inner Wrapper ── */
+.tv-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 48px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   HEADER — two-column split headline
+   ============================================================ */
+.tv-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: end;
+  margin-bottom: 48px;
+}
+
+.tv-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #bb893a;
+  border: 1px solid rgba(187, 137, 58, 0.35);
+  border-radius: 100px;
+  padding: 5px 16px;
+  margin-bottom: 18px;
+}
+
+.tv-title {
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.05;
+  color: #0a2e1e;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.tv-gold {
+  color: #bb893a;
+}
+
+.tv-subtitle {
+  font-size: 1.0rem;
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+  padding-bottom: 6px;
+}
+
+/* ── Divider ── */
+.tv-divider {
+  height: 1px;
+  background: linear-gradient(to right, #d4b896, rgba(212, 184, 150, 0.1));
+  margin-bottom: 56px;
+}
+
+/* ============================================================
+   BODY — two-column layout
+   ============================================================ */
+.tv-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* ============================================================
+   LEFT — Image Gallery
+   ============================================================ */
+.tv-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tv-img-large {
+  width: 100%;
+  height: 300px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(10, 46, 30, 0.12);
+}
+
+.tv-img-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.tv-img-large:hover img {
+  transform: scale(1.04);
+}
+
+.tv-img-small-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.tv-img-small {
+  height: 190px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.tv-img-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.tv-img-small:hover img {
+  transform: scale(1.05);
+}
+
+/* Markets pill / badge */
+.tv-markets-pill {
+  background-color: #0a2e1e;
+  border-radius: 12px;
+  padding: 18px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.tv-markets-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #e0c97a;
+}
+
+.tv-markets-list {
+  font-size: 0.88rem;
+  color: #9ab8a0;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+/* ============================================================
+   RIGHT — Textual Content
+   ============================================================ */
+.tv-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* "Who is it for" block */
+.tv-who {
+  padding-bottom: 4px;
+}
+
+.tv-who-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0a2e1e;
+  margin: 0 0 14px;
+  letter-spacing: -0.01em;
+}
+
+.tv-who-para {
+  font-size: 0.96rem;
+  color: #4a4a4a;
+  line-height: 1.8;
+  margin: 0 0 12px;
+}
+
+.tv-who-para:last-child {
+  margin-bottom: 0;
+}
+
+/* Cards */
+.tv-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tv-card {
+  background-color: #0a2e1e;
+  border-radius: 12px;
+  padding: 22px 24px;
+  border-left: 3px solid #bb893a;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.tv-card:hover {
+  transform: translateX(6px);
+  box-shadow: 0 16px 36px rgba(10, 46, 30, 0.3);
+}
+
+.tv-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tv-card-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #bb893a;
+  flex-shrink: 0;
+}
+
+.tv-card-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #e0c97a;
+  letter-spacing: 0.02em;
+}
+
+.tv-card-text {
+  font-size: 0.875rem;
+  color: #8eb89a;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .tv-inner {
+    padding: 0 32px;
+  }
+
+  .tv-header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 36px;
+  }
+
+  .tv-body {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .tv-img-large {
+    height: 260px;
+  }
+
+  .tv-img-small {
+    height: 160px;
+  }
+}
+
+@media (max-width: 640px) {
+  .trading-vault-section {
+    padding: 72px 0 64px;
+  }
+
+  .tv-inner {
+    padding: 0 20px;
+  }
+
+  .tv-title {
+    font-size: 2.2rem;
+  }
+
+  .tv-img-small-row {
+    grid-template-columns: 1fr;
+  }
+
+  .tv-img-small {
+    height: 200px;
+  }
+
+  .tv-img-large {
+    height: 220px;
+  }
+}

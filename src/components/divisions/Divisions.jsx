@@ -9,65 +9,65 @@ const Divisions = () => {
     const processSteps = [
         {
             id: '8c3e6568-ad90-cca6-2a7e-ce466ffb8435',
-            img: 'https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a35f5b567ff052b9e69af9_ChatGPT%20Image%2027%20fe%CC%81vr.%202026%2C%2016_31_49.webp',
-            title: 'Scoping &amp; Intention',
+            img: '/images/home-slider/Mine1.jpg',
+            title: 'RBC Gold &amp; Mine',
             num: '01',
-            desc: 'We start by listening. Understanding the uses, constraints, ambitions, and the budget. <br />This stage sets a solid and shared foundation, essential for the project\'s coherence.',
-            flipImg: 'https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a362ab82e24dd9d00dac6a_Visuel%202-2.webp',
+            desc: 'Royal Bullion Capital operates its own gold mines — the origin of everything. <br />Every ounce of gold in our supply chain is extracted from RBC-owned concessions, giving us complete control over quality, traceability, and output from the very first step.',
+            flipImg: '/images/home-slider/Mine2.jpg',
             stepClass: ''
         },
         {
             id: '701424e4-9d68-d1e9-174b-c5edae7e4574',
-            img: 'https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a36167fb3d58cd7e1f9905_b25df55338ac766b311222cbc4b7f792_IMG_3482-2.webp',
-            title: 'Concept &amp; Direction',
+            img: '/images/home-slider/refine1.jpg',
+            title: 'RBC Gold &amp; Refinery',
             num: '02',
-            desc: 'We translate the brief into clear architectural intentions: volumes, lines, atmosphere.<br />A legible concept, designed to last, which guides all future choices.',
-            flipImg: 'https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a366532a9c3f67e94b41a0_a0638cafe3b536cbe64033338882cb22_IMG_3156-2.webp',
+            desc: 'Once extracted, gold ore moves directly into our own in-house refinery. <br />We process, purify and certify every batch to 999.9 purity — four nines — with zero reliance on external refiners.',
+            flipImg: '/images/home-slider/refine2.jpg',
             stepClass: 'cream'
         },
         {
             id: '1abe8661-5e7b-efc6-9086-9c5a48d1ede0',
-            img: 'https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a35e03c3c6f67024a133b5_ChatGPT%20Image%2027%20fe%CC%81vr.%202026%2C%2017_24_01.webp',
-            title: 'Space Planning',
+            img: '/images/home-slider/Trading1.jpg',
+            title: 'RBC Bullion &amp; Trading',
             num: '03',
-            desc: 'Plans take shape. Circulations are refined. Uses are optimized.<br />Every square meter is designed to be fluid, obvious and functional.',
-            flipImg: 'https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a361a90542b284d2ae4b63_721749b2cf44ca6cb4ed52f88c21863e_IMG_2766-3.webp',
+            desc: 'Certified gold bars move from the refinery to our professional trading desk. <br />RBC distributes investment-grade bullion to institutional buyers, family offices, and global partners — at competitive, direct prices with no intermediary margin.',
+            flipImg: '/images/home-slider/Trading2.jpg',
             stepClass: ''
         },
         {
             id: '0968e337-2088-e1b0-9dec-d8efffa5397f',
-            img: 'https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a36540c658b1a9e5bc1051_ChatGPT%20Image%2027%20fe%CC%81vr.%202026%2C%2016_25_31.webp',
-            title: 'Materials &amp; Details',
+            img: '/images/home-slider/1mg1.jpg',
+            title: '1mg Gold &amp; App',
             num: '04',
-            desc: 'We work with materials, textures, light and details.<br />They give the place its depth, character and silent elegance.',
-            flipImg: 'https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a35f2ac4033001dc0c3608_cb5c7c12f3853f06eadf04ec677dbb67_IMG_5442.webp',
+            desc: 'The 1mg Gold consumer app brings gold investing to everyone. <br />Users can buy physical gold from as little as 1 milligram, track live prices, and request delivery from 10 grams — all backed by real gold in RBC\'s insured Dubai vault.',
+            flipImg: '/images/home-slider/1mg2.jpg',
             stepClass: 'cream'
         },
         {
             id: 'a54e9091-9819-1ea8-1bba-ea42a3a35e1d',
-            img: 'https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a35e314bd7db967d2cf34b_Espace%20de%20travail%20d%27architecte%20a%CC%80%20Paris.webp',
-            title: 'Budget &amp; Tendering',
+            img: '/images/home-slider/Mine2.jpg',
+            title: 'Full Chain &amp; Custody',
             num: '05',
-            desc: 'The project meets budget reality.<br />We guide the trade-offs with accuracy, preserving the initial intention and the overall value of the place.',
-            flipImg: 'https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a35e40145a1522ccb7bc65_ChatGPT%20Image%2027%20fe%CC%81vr.%202026%2C%2017_05_05.webp',
+            desc: 'Gold never leaves the RBC environment between mine and market. <br />This full-chain custody eliminates third-party risk entirely — delivering a level of transparency and security that no gold company using external partners can match.',
+            flipImg: '/images/home-slider/Mine1.jpg',
             stepClass: ''
         },
         {
             id: 'b2988c5f-0e90-61d8-9ada-8da02bdc1600',
-            img: 'https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a36a64eb13ef6b0c9f1f17_00bbc7b8fc8e584326c6456da3169ad0_IMG_3310-3.webp',
-            title: 'Administrative Framework',
+            img: '/images/home-slider/refine2.jpg',
+            title: 'Purity &amp; Certification',
             num: '06',
-            desc: 'We integrate regulatory and administrative constraints from the design stage.<br />This anticipation ensures the project\'s compliance, avoids blockages and secures the timeline.',
-            flipImg: 'https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a369f8d0c408cda577e81e_declaration-prealable%20(1).webp',
+            desc: 'Every bar that leaves our refinery is hallmarked, documented, and traceable by a unique identifier in the RBC custody system. <br />Our process is fully accredited — ensuring worldwide market acceptance for institutional clients.',
+            flipImg: '/images/home-slider/refine1.jpg',
             stepClass: 'cream'
         },
         {
             id: '7e3b3493-eebd-0db5-8ece-d8e3215a92f6',
-            img: 'https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a35efdfd7ca35f82ea2a06_4D5A8206%20copie.webp',
-            title: 'Preparation &amp; Management',
+            img: '/images/home-slider/Trading2.jpg',
+            title: 'Secure &amp; Vaulted',
             num: '07',
-            desc: 'We prepare the project for its implementation, coordinate stakeholders and support execution.<br />The construction site becomes a logical, controlled progression, faithful to the initial project.',
-            flipImg: 'https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/69a366cd77a7286c9a13c560_1063cae81d79958326d4e192c34b6d9f_IMG_0566-3.webp',
+            desc: 'All certified gold is stored in RBC\'s fully insured and audited Dubai vault. <br />Available for withdrawal by institutional clients, accessible to 1mg Gold app users, and ready for delivery orders globally — secured at every step.',
+            flipImg: '/images/home-slider/Trading1.jpg',
             stepClass: ''
         }
     ];
@@ -169,7 +169,7 @@ const Divisions = () => {
                                     <div class="about-hero-bottom">
                                         <h1 reveal-letter="" class="h1-process">
                                             Three Divisions. One
-                                            <span className='text-gold'>  Gold </span> Standard. 
+                                            <span className='text-gold'>  Gold </span> Standard.
                                         </h1>
 
                                     </div>
@@ -210,23 +210,23 @@ const Divisions = () => {
                                     <div className="division-content-left">
                                         <div className="image-gallery">
                                             <div className="gallery-item-large">
-                                                <img 
-                                                    src="https://royalbullioncapital.com/wp-content/uploads/2024/08/GoldRefinery-Slide.jpg" 
-                                                    alt="Gold Refining" 
+                                                <img
+                                                    src="https://royalbullioncapital.com/wp-content/uploads/2024/08/GoldRefinery-Slide.jpg"
+                                                    alt="Gold Refining"
                                                     className="gallery-img"
                                                 />
                                             </div>
                                             <div className="gallery-item-small">
-                                                <img 
-                                                    src="https://royalbullioncapital.com/wp-content/uploads/2024/07/gold-mine-e1773676294903.jpg" 
-                                                    alt="Gold Mine Operations" 
+                                                <img
+                                                    src="https://royalbullioncapital.com/wp-content/uploads/2024/07/gold-mine-e1773676294903.jpg"
+                                                    alt="Gold Mine Operations"
                                                     className="gallery-img"
                                                 />
                                             </div>
                                             <div className="gallery-item-small">
-                                                <img 
-                                                    src="https://royalbullioncapital.com/wp-content/uploads/2025/01/gold-mine-2.jpg" 
-                                                    alt="Gold Mine Exploration" 
+                                                <img
+                                                    src="https://royalbullioncapital.com/wp-content/uploads/2025/01/gold-mine-2.jpg"
+                                                    alt="Gold Mine Exploration"
                                                     className="gallery-img"
                                                 />
                                             </div>
@@ -236,7 +236,7 @@ const Divisions = () => {
                                     {/* Right Column: Headline & Features */}
                                     <div className="division-content-right">
                                         <h1 className="headline-main">We Own the <span className='text-gold'>Source.</span></h1>
-                                        
+
                                         <h3 className="subheadline-mine">What Does It Mean to Own a Gold Mine?</h3>
                                         <p className="content-paragraph">
                                             A gold mine is where gold-bearing rock called ore is extracted from the earth. Most companies buy this from a third-party operator. RBC does not. By owning and operating our own mines, we control the entire upstream of the gold supply chain.
@@ -249,7 +249,7 @@ const Divisions = () => {
                                             {/* Geological Surveying */}
                                             <div className="feature-card">
                                                 <div className="feature-icon-wrapper">
-                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                                                 </div>
                                                 <div className="feature-content">
                                                     <h3>Geological Surveying</h3>
@@ -260,7 +260,7 @@ const Divisions = () => {
                                             {/* Extraction */}
                                             <div className="feature-card">
                                                 <div className="feature-icon-wrapper">
-                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
                                                 </div>
                                                 <div className="feature-content">
                                                     <h3>Extraction</h3>
@@ -271,7 +271,7 @@ const Divisions = () => {
                                             {/* On-Site Processing */}
                                             <div className="feature-card">
                                                 <div className="feature-icon-wrapper">
-                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
                                                 </div>
                                                 <div className="feature-content">
                                                     <h3>On-Site Processing</h3>
@@ -356,12 +356,11 @@ const Divisions = () => {
                                 ))}
                             </div>
                         </section>
-                       
+
                         <footer class="footer">
                             <div class="container-footer">
                                 <div class="container-top-footer">
-                                    <h2 class="desc-projet">We design unique spaces, thought to be lived in, and
-                                        designed to stand the test of time.</h2>
+
                                     <div class="flex-40">
                                         <a href="mailto:support@royalbullioncapital.com" class="contact-footer w-inline-block">
                                             <div>mail</div>
@@ -522,7 +521,7 @@ const Divisions = () => {
                                     <img src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/699c216505338d828d1b32cb_Footer-Wide-2.svg" loading="lazy" alt="" class="bg-footer cream hide-tab" />
                                     <img src="https://cdn.prod.website-files.com/69689842a40a17ac45e5418a/699c216505338d828d1b32cb_Footer-Wide-2.svg" loading="lazy" alt="" class="bg-footer green hide-tab" />
                                 </div>
-                                
+
                             </div>
                         </footer>
                     </div>

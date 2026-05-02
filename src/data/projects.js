@@ -10,7 +10,7 @@ export const projects = [
     rightImage: "/images/home-slider/Mine2.jpg",
     leftImageSet: "/images/home-slider/Mine1.jpg",
     rightImageSet: "/images/home-slider/Mine2.jpg",
-    bgColor: "#62a86fff",
+    bgColor: "#bb893aff",
     description: "Royal Bullion Capital is proud to announce a partnership with Crescent Metals & Minerals, a leading player in the African market, in Ghana. This collaboration is valid till 2050 and enables us to expand our bullion market offerings and provide our investors with access to a wider range of investment opportunities in the industry.",
     surface: "120",
     address: "Place des Vosges, Paris 4",

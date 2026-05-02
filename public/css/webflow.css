@@ -3234,7 +3234,7 @@ blockquote {
 .heading,
 .rank {
     font-size: .875rem;
-    width:400px;
+    width: 400px;
 }
 
 .services_item {
@@ -3382,8 +3382,9 @@ blockquote {
 .card-contact_project.is-contact {
     justify-content: center;
     align-items: center;
-    height: 18.1rem;
-    display: flex
+    height: 28.1rem;
+    display: flex;
+    width: 60rem;
 }
 
 .card-contact_project.accomapgnement {

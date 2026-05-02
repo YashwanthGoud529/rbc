@@ -255,7 +255,7 @@ a {
 }
 
 .text-gold {
-  color: #ffc000;
+  color: #bb893a;
 }
 
 @media (max-width: 991px) {
@@ -283,9 +283,9 @@ a {
   text-decoration: none;
   color: white;
   overflow: hidden;
-  box-shadow: 
-    inset 0 0 50px rgba(0,0,0,0.3),
-    0 5px 15px rgba(0,0,0,0.1);
+  box-shadow:
+    inset 0 0 50px rgba(0, 0, 0, 0.3),
+    0 5px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   margin-top: auto;
 }
@@ -305,9 +305,9 @@ a {
 
 .location-map-card:hover {
   transform: translateY(-8px);
-  box-shadow: 
-    inset 0 0 80px rgba(0,0,0,0.3),
-    0 20px 40px rgba(0,0,0,0.2);
+  box-shadow:
+    inset 0 0 80px rgba(0, 0, 0, 0.3),
+    0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .location-map-card .search-icon {
@@ -362,8 +362,8 @@ a {
 }
 
 .project-title {
-  color: #004a33;
-  font-size: 2rem;
+  color: hsl(161, 100%, 15%);
+  font-size: 1.4rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
@@ -380,14 +380,17 @@ a {
 
 /* Project Slider Buttons (Dropdown menu style) */
 .project-slider_btn_item[slider-name="Mine"] .project-slider_btn {
-  background-color: #62a86fff !important;
+  background-color: #bb893aff !important;
 }
+
 .project-slider_btn_item[slider-name="Refine"] .project-slider_btn {
   background-color: #4e4846ff !important;
 }
+
 .project-slider_btn_item[slider-name="Trading"] .project-slider_btn {
   background-color: #f85656ff !important;
 }
+
 .project-slider_btn_item[slider-name="1 MG"] .project-slider_btn {
   background-color: hsla(69, 100%, 64%, 1.00) !important;
 }
@@ -403,6 +406,7 @@ a {
 .project-slider_btn_item[slider-name="Trading"] .project-slider_btn .info-etiquette div {
   color: #ffffff !important;
 }
+
 .project-slider_btn_item[slider-name="Refine"] .project-slider_btn path,
 .project-slider_btn_item[slider-name="Trading"] .project-slider_btn path {
   fill: #ffffff !important;

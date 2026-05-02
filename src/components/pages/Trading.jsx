@@ -1,8 +1,9 @@
 import React from 'react'
+import './trading_content.css'
 
 const Trading = () => {
   return (
-    <div>
+    <div className="trading-page">
       <div className="page-wrapper">
         <main data-taxi="" className="main-wrapper">
           <div data-taxi-view="" className="page_view">
@@ -86,60 +87,127 @@ const Trading = () => {
                       <div className="voile-project"></div>
                     </div>
                   </section>
+
+                  {/* ── Intro: From Vault to the World ── */}
+                  <section className="section-h collaboration-section">
+                    <div className="container">
+                      <div className="collaboration-grid">
+                        <div className="collaboration-left">
+                          <div style={{ color: '#004a33', fontWeight: 'bold', marginBottom: '10px', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.9rem' }}>Bullion Trading Division</div>
+                          <h2 className="collaboration-title">From Vault <span style={{ color: '#bb893a' }}>to the World.</span></h2>
+                          <div className="collaboration-text-wrapper">
+                            <p className="collaboration-text">
+                              After extraction from RBC's own mines, gold enters our in-house refinery where it's processed, purified, and certified to international standards. Most gold companies outsource this entirely. We do it ourselves.
+                            </p>
+                            <p className="collaboration-text">
+                              RBC's Bullion Trading division is designed for institutional counterparties — not retail consumers. Banks, exchanges, family offices, trading desks, investment funds, and regional distributors who want a direct-source physical gold partner.
+                            </p>
+                            <p className="collaboration-text">
+                              Every gram comes with complete provenance documentation, full regulatory compliance, and the confidence of a Dubai-licensed institution with its own mine and refinery.
+                            </p>
+                          </div>
+                        </div>
+                        <div className="collaboration-right">
+                          <img
+                            src="/images/home-slider/Trading1.jpg"
+                            alt="RBC Bullion Trading"
+                            className="collaboration-img"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  {/* ── Services List: Who is it for ── */}
                   <section className="section-h">
                     <div className="container desc-project">
-                      <h2 line="" className="desc-projet"></h2>
+                      <h2 line="" className="desc-projet">
+                        Everything You Need. Direct from Source.
+                      </h2>
+                      <p className="desc-projet-sub" style={{ fontSize: '1rem', lineHeight: '1.6', marginBottom: '40px', maxWidth: '800px', color: '#1a1a1a', opacity: '0.8' }}>
+                        Why choose RBC Bullion Trading? Direct access, zero intermediaries.
+                      </p>
                       <div className="list-services">
                         <div className="services_list_w w-dyn-list">
-                          <div role="list" className="services_list w-dyn-items">
-                            <div role="listitem" className="services_item w-dyn-item">
+                          <div className="services_list w-dyn-items" style={{ display: 'flex', flexDirection: 'column', padding: '20px 0' }}>
+                            <div className="services_item w-dyn-item">
                               <div className="line bottom"></div>
                               <div className="div-block-3">
-                                <div reveal-op="" className="code-embed-3 w-embed">
-                                  <svg width="100%" height="100%" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.71354 10C4.62674 9.43576 4.375 8.82812 3.95833 8.17708C3.55035 7.52604 2.96875 6.91406 2.21354 6.34115C1.44965 5.75955 0.711806 5.39931 0 5.26042V4.71354C0.720486 4.54861 1.41927 4.22743 2.09635 3.75C2.77344 3.27257 3.34635 2.70399 3.8151 2.04427C4.28385 1.37587 4.58333 0.694444 4.71354 0H5.26042C5.33854 0.442708 5.49479 0.889757 5.72917 1.34115C5.97222 1.79253 6.28038 2.22656 6.65365 2.64323C7.02691 3.05122 7.43924 3.42014 7.89062 3.75C8.57639 4.23611 9.27951 4.55729 10 4.71354V5.26042C9.51389 5.3559 9.01476 5.55121 8.5026 5.84635C7.99913 6.14149 7.53038 6.48871 7.09635 6.88802C6.66233 7.28733 6.30642 7.70833 6.02865 8.15104C5.6033 8.82812 5.34722 9.44444 5.26042 10H4.71354ZM4.89583 9.6875H5.07812C5.12153 9.23611 5.19097 8.78472 5.28646 8.33333C5.39062 7.87326 5.50781 7.44792 5.63802 7.05729C5.77691 6.66667 5.92014 6.34549 6.06771 6.09375C6.36285 5.92882 6.71441 5.77691 7.1224 5.63802C7.53906 5.49913 7.96875 5.38194 8.41146 5.28646C8.86285 5.19097 9.27951 5.13021 9.66146 5.10417V4.92187C9.27951 4.88715 8.85851 4.82205 8.39844 4.72656C7.94705 4.6224 7.51302 4.50087 7.09635 4.36198C6.67969 4.21441 6.33681 4.0625 6.06771 3.90625C5.92014 3.64583 5.77691 3.32465 5.63802 2.94271C5.50781 2.55208 5.39062 2.13542 5.28646 1.69271C5.19097 1.24132 5.12153 0.78993 5.07812 0.338541H4.89583C4.86111 0.746527 4.79601 1.17187 4.70052 1.61458C4.61372 2.04861 4.50087 2.46528 4.36198 2.86458C4.22309 3.26389 4.07118 3.61111 3.90625 3.90625C3.62847 4.0625 3.28559 4.21441 2.8776 4.36198C2.46962 4.50087 2.03993 4.6224 1.58854 4.72656C1.13715 4.82205 0.711806 4.88715 0.3125 4.92187V5.10417C0.711806 5.13021 1.13281 5.19097 1.57552 5.28646C2.01823 5.38194 2.44358 5.49913 2.85156 5.63802C3.25955 5.77691 3.61111 5.92882 3.90625 6.09375C4.07118 6.37153 4.21875 6.71441 4.34896 7.1224C4.48785 7.5217 4.60503 7.94705 4.70052 8.39844C4.79601 8.84115 4.86111 9.27083 4.89583 9.6875Z" fill="#1A1A1A" />
-                                  </svg>
-                                </div>
-                                <h3 line="" className="heading">Interior Decoration</h3>
+                                <h3 className="heading">Linktrade Accounts</h3>
+                                <p style={{ margin: 0, opacity: 0.7, fontSize: '0.9rem', marginTop: '10px' }}>Exchanges and trading desks connect directly to RBC's live gold inventory with full audit trails.</p>
                               </div>
-                              <div reveal-letter="" className="rank">01</div>
-                              <div className="line top"></div>
+                              <div className="rank">01</div>
                             </div>
-                            <div role="listitem" className="services_item w-dyn-item">
+                            <div className="services_item w-dyn-item">
                               <div className="line bottom"></div>
                               <div className="div-block-3">
-                                <div reveal-op="" className="code-embed-3 w-embed">
-                                  <svg width="100%" height="100%" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.71354 10C4.62674 9.43576 4.375 8.82812 3.95833 8.17708C3.55035 7.52604 2.96875 6.91406 2.21354 6.34115C1.44965 5.75955 0.711806 5.39931 0 5.26042V4.71354C0.720486 4.54861 1.41927 4.22743 2.09635 3.75C2.77344 3.27257 3.34635 2.70399 3.8151 2.04427C4.28385 1.37587 4.58333 0.694444 4.71354 0H5.26042C5.33854 0.442708 5.49479 0.889757 5.72917 1.34115C5.97222 1.79253 6.28038 2.22656 6.65365 2.64323C7.02691 3.05122 7.43924 3.42014 7.89062 3.75C8.57639 4.23611 9.27951 4.55729 10 4.71354V5.26042C9.51389 5.3559 9.01476 5.55121 8.5026 5.84635C7.99913 6.14149 7.53038 6.48871 7.09635 6.88802C6.66233 7.28733 6.30642 7.70833 6.02865 8.15104C5.6033 8.82812 5.34722 9.44444 5.26042 10H4.71354ZM4.89583 9.6875H5.07812C5.12153 9.23611 5.19097 8.78472 5.28646 8.33333C5.39062 7.87326 5.50781 7.44792 5.63802 7.05729C5.77691 6.66667 5.92014 6.34549 6.06771 6.09375C6.36285 5.92882 6.71441 5.77691 7.1224 5.63802C7.53906 5.49913 7.96875 5.38194 8.41146 5.28646C8.86285 5.19097 9.27951 5.13021 9.66146 5.10417V4.92187C9.27951 4.88715 8.85851 4.82205 8.39844 4.72656C7.94705 4.6224 7.51302 4.50087 7.09635 4.36198C6.67969 4.21441 6.33681 4.0625 6.06771 3.90625C5.92014 3.64583 5.77691 3.32465 5.63802 2.94271C5.50781 2.55208 5.39062 2.13542 5.28646 1.69271C5.19097 1.24132 5.12153 0.78993 5.07812 0.338541H4.89583C4.86111 0.746527 4.79601 1.17187 4.70052 1.61458C4.61372 2.04861 4.50087 2.46528 4.36198 2.86458C4.22309 3.26389 4.07118 3.61111 3.90625 3.90625C3.62847 4.0625 3.28559 4.21441 2.8776 4.36198C2.46962 4.50087 2.03993 4.6224 1.58854 4.72656C1.13715 4.82205 0.711806 4.88715 0.3125 4.92187V5.10417C0.711806 5.13021 1.13281 5.19097 1.57552 5.28646C2.01823 5.38194 2.44358 5.49913 2.85156 5.63802C3.25955 5.77691 3.61111 5.92882 3.90625 6.09375C4.07118 6.37153 4.21875 6.71441 4.34896 7.1224C4.48785 7.5217 4.60503 7.94705 4.70052 8.39844C4.79601 8.84115 4.86111 9.27083 4.89583 9.6875Z" fill="#1A1A1A" />
-                                  </svg>
-                                </div>
-                                <h3 line="" className="heading">Furniture Selection</h3>
+                                <h3 className="heading">Institutional Bullion Accounts</h3>
+                                <p style={{ margin: 0, opacity: 0.7, fontSize: '0.9rem', marginTop: '10px' }}>Direct accounts for buying, selling, and storing allocated physical gold. KYC &amp; AML managed by RBC.</p>
                               </div>
-                              <div reveal-letter="" className="rank">02</div>
-                              <div className="line top"></div>
+                              <div className="rank">02</div>
                             </div>
-                            <div role="listitem" className="services_item w-dyn-item">
+                            <div className="services_item w-dyn-item">
                               <div className="line bottom"></div>
                               <div className="div-block-3">
-                                <div reveal-op="" className="code-embed-3 w-embed">
-                                  <svg width="100%" height="100%" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.71354 10C4.62674 9.43576 4.375 8.82812 3.95833 8.17708C3.55035 7.52604 2.96875 6.91406 2.21354 6.34115C1.44965 5.75955 0.711806 5.39931 0 5.26042V4.71354C0.720486 4.54861 1.41927 4.22743 2.09635 3.75C2.77344 3.27257 3.34635 2.70399 3.8151 2.04427C4.28385 1.37587 4.58333 0.694444 4.71354 0H5.26042C5.33854 0.442708 5.49479 0.889757 5.72917 1.34115C5.97222 1.79253 6.28038 2.22656 6.65365 2.64323C7.02691 3.05122 7.43924 3.42014 7.89062 3.75C8.57639 4.23611 9.27951 4.55729 10 4.71354V5.26042C9.51389 5.3559 9.01476 5.55121 8.5026 5.84635C7.99913 6.14149 7.53038 6.48871 7.09635 6.88802C6.66233 7.28733 6.30642 7.70833 6.02865 8.15104C5.6033 8.82812 5.34722 9.44444 5.26042 10H4.71354ZM4.89583 9.6875H5.07812C5.12153 9.23611 5.19097 8.78472 5.28646 8.33333C5.39062 7.87326 5.50781 7.44792 5.63802 7.05729C5.77691 6.66667 5.92014 6.34549 6.06771 6.09375C6.36285 5.92882 6.71441 5.77691 7.1224 5.63802C7.53906 5.49913 7.96875 5.38194 8.41146 5.28646C8.86285 5.19097 9.27951 5.13021 9.66146 5.10417V4.92187C9.27951 4.88715 8.85851 4.82205 8.39844 4.72656C7.94705 4.6224 7.51302 4.50087 7.09635 4.36198C6.67969 4.21441 6.33681 4.0625 6.06771 3.90625C5.92014 3.64583 5.77691 3.32465 5.63802 2.94271C5.50781 2.55208 5.39062 2.13542 5.28646 1.69271C5.19097 1.24132 5.12153 0.78993 5.07812 0.338541H4.89583C4.86111 0.746527 4.79601 1.17187 4.70052 1.61458C4.61372 2.04861 4.50087 2.46528 4.36198 2.86458C4.22309 3.26389 4.07118 3.61111 3.90625 3.90625C3.62847 4.0625 3.28559 4.21441 2.8776 4.36198C2.46962 4.50087 2.03993 4.6224 1.58854 4.72656C1.13715 4.82205 0.711806 4.88715 0.3125 4.92187V5.10417C0.711806 5.13021 1.13281 5.19097 1.57552 5.28646C2.01823 5.38194 2.44358 5.49913 2.85156 5.63802C3.25955 5.77691 3.61111 5.92882 3.90625 6.09375C4.07118 6.37153 4.21875 6.71441 4.34896 7.1224C4.48785 7.5217 4.60503 7.94705 4.70052 8.39844C4.79601 8.84115 4.86111 9.27083 4.89583 9.6875Z" fill="#1A1A1A" />
-                                  </svg>
-                                </div>
-                                <h3 line="" className="heading">Custom Millwork</h3>
+                                <h3 className="heading">Distribution Partnerships</h3>
+                                <p style={{ margin: 0, opacity: 0.7, fontSize: '0.9rem', marginTop: '10px' }}>White-label integration with 1mg Gold. Revenue sharing on all referred activity.</p>
                               </div>
-                              <div reveal-letter="" className="rank">03</div>
+                              <div className="rank">03</div>
+                            </div>
+                            <div className="services_item w-dyn-item">
+                              <div className="line bottom"></div>
+                              <div className="div-block-3">
+                                <h3 className="heading">Active in 8+ Global Markets</h3>
+                                <p style={{ margin: 0, opacity: 0.7, fontSize: '0.9rem', marginTop: '10px' }}>UAE · Malaysia · Singapore · UK · Saudi Arabia · Indonesia · Switzerland</p>
+                              </div>
+                              <div className="rank">04</div>
                               <div className="line top"></div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div className="surface_w">
-                        <div data-stagger="0.065" reveal-letter="" className="surface">150</div>
-                        <div reveal-op="" className="m2">m²</div>
+                    </div>
+                  </section>
+
+                  {/* ── Cards Grid: 3 Account Types ── */}
+                  <section className="section-h">
+                    <div className="container">
+                      <div className="projects-grid">
+                        <div className="ecuador-project-item">
+                          <h2 className="project-title">Linktrade Accounts</h2>
+                          <p className="project-desc">Exchanges and trading desks connect directly with RBC's physical gold supply via Linktrade. Real-time access to RBC's gold inventory with full audit trails and compliance documentation provided entirely by RBC.</p>
+                          <div className="location-map-card">
+                            <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                            </svg>
+                            <span className="label">Live Access</span>
+                          </div>
+                        </div>
+                        <div className="ecuador-project-item">
+                          <h2 className="project-title">Institutional Bullion Accounts</h2>
+                          <p className="project-desc">Open a direct bullion account for buying, selling, and storing allocated physical gold. Full KYC and AML onboarding managed entirely by RBC — no compliance burden transferred to the partner institution.</p>
+                          <div className="location-map-card">
+                            <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                            <span className="label">Fully Managed</span>
+                          </div>
+                        </div>
+                        <div className="ecuador-project-item">
+                          <h2 className="project-title">Distribution Partnerships</h2>
+                          <p className="project-desc">Regional distributors and fintech platforms partner with RBC to offer gold products to their own clients including white-label integration with 1mg Gold. Revenue sharing on all referred activity.</p>
+                          <div className="location-map-card">
+                            <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" />
+                              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" /><line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                            </svg>
+                            <span className="label">Revenue Share</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </section>
+
                   <section className="project-hero_w test">
                     <div className="gallery_list_w w-dyn-list">
                       <div role="list" className="gallery_list w-dyn-items">
@@ -329,7 +397,7 @@ const Trading = () => {
                         <div role="list" className="project-slider_btn_list w-dyn-items">
                           <div slider-name="Mine" role="listitem" className="project-slider_btn_item w-dyn-item">
                             <a data-hover-link-ignore="" flip-transition="" href="/mine" className="project-slider-link w-inline-block">
-                              <div className="project-slider_btn" style={{ backgroundColor: '#62a86fff' }}>
+                              <div className="project-slider_btn" style={{ backgroundColor: '#bb893aff' }}>
                                 <div className="info-project-left">
                                   <h2 className="h2-project-btn">Mine</h2>
                                   <div className="hide-tab">Mine</div>
